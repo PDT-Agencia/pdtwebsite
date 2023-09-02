@@ -14,7 +14,7 @@
         @vite(['resources/css/app.scss', 'resources/js/app.js'])
 
     </head>
-    <body class="antialiased">
+    <body class=" antialiased">
         <div>
         <nav class=" mx-5 navbar navbar-light bg-light justify-content-between">
   <a class="navbar-brand">Navbar</a>
@@ -26,5 +26,6 @@
                 {{$slot}}
             </main>
         </div>
+        <script src="https://cdn.canvasjs.com/ga/canvasjs.stock.min.js"></script>
     </body>
 </html>
