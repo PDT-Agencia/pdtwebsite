@@ -45,84 +45,60 @@
         </button>
     </div>
 
-    <div class="container">
-        <div class="line"></div>
-        <div class="point start"></div>
-        <div class="point middle"></div>
-        <div class="point end"></div>
-    </div>
+    <canvas id="canvas" width="500" height="100"></canvas>
+
+
     <style>
-       body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
 
-.container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: #f0f0f0;
-    overflow: hidden;
-}
-
-.line {
-    position: absolute;
-    background-color: #000;
-    height: 2px;
-    width: 0;
-    transition: width 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-    top: 50%; /* Agregamos esta línea para centrar la línea verticalmente */
-}
-
-.point {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.start {
-    top: 50%;
-    left: 10px;
-}
-
-.middle {
-    top: 20%;
-    left: 50%;
-}
-
-.end {
-    top: 80%;
-    left: 90%;
-}
+        canvas {
+            display: block;
+        }
     </style>
 
+    <canvas id="myCanvas"></canvas>
     <script>
-       document.addEventListener("DOMContentLoaded", function () {
-    const line = document.querySelector(".line");
-    const middlePoint = document.querySelector(".middle");
-    const endPoint = document.querySelector(".end");
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
 
-    // Calcula la longitud total de la línea
-    const totalLength = Math.sqrt(
-        Math.pow(middlePoint.offsetTop - endPoint.offsetTop, 2) +
-        Math.pow(middlePoint.offsetLeft - endPoint.offsetLeft, 2)
-    );
+        // Configurar el tamaño del canvas
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
 
-    // Establece la longitud inicial de la línea
-    line.style.width = totalLength + "px";
+        // Configurar el estilo de la línea
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = "blue";
 
-    // Inicia la animación
-    setTimeout(function () {
-        line.style.width = "0";
-    }, 100);
+        // Comenzar el trazado
+        ctx.beginPath();
 
-    // Agrega una clase para animar los puntos finales
-    middlePoint.classList.add("animate");
-    endPoint.classList.add("animate");
-});
+        // Dibujar un semicírculo
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        const radius = 100;
+        const startAngle = 0;
+        const endAngle = Math.PI;
+
+        ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+
+        // Calcular las coordenadas de destino para las líneas rectas
+        const startX = centerX - radius;
+        const startY = centerY;
+        const endX1 = centerX + radius + 100; // Línea recta hacia la derecha
+        const endY1 = centerY;
+        const endX2 = centerX - radius - 100; // Línea recta hacia la izquierda
+        const endY2 = centerY;
+
+        // Continuar con líneas rectas desde los extremos del semicírculo en la misma dirección
+        ctx.moveTo(startX, startY);
+        ctx.lineTo(endX1, endY1); // Línea recta hacia la derecha
+        ctx.moveTo(startX, startY);
+        ctx.lineTo(endX2, endY2); // Línea recta hacia la izquierda
+
+        // Finalizar el trazado
+        ctx.stroke();
     </script>
 </x-app-layout>
