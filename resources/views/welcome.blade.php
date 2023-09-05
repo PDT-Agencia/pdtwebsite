@@ -75,28 +75,24 @@
         // Comenzar el trazado
         ctx.beginPath();
 
-        // Dibujar un semicírculo
-        const centerX = canvas.width / 2;
-        const centerY = canvas.height / 2;
-        const radius = 100;
-        const startAngle = 0;
-        const endAngle = Math.PI;
+        // Dibujar una línea recta horizontal
+        const startX = 100; // Coordenada X de inicio de la línea horizontal
+        const startY = canvas.height / 2; // Coordenada Y de inicio de la línea horizontal
+        const lineLength = 200; // Longitud de la línea horizontal
 
-        ctx.arc(centerX, centerY, radius, startAngle, endAngle);
-
-        // Calcular las coordenadas de destino para las líneas rectas
-        const startX = centerX - radius;
-        const startY = centerY;
-        const endX1 = centerX + radius + 100; // Línea recta hacia la derecha
-        const endY1 = centerY;
-        const endX2 = centerX - radius - 100; // Línea recta hacia la izquierda
-        const endY2 = centerY;
-
-        // Continuar con líneas rectas desde los extremos del semicírculo en la misma dirección
         ctx.moveTo(startX, startY);
-        ctx.lineTo(endX1, endY1); // Línea recta hacia la derecha
-        ctx.moveTo(startX, startY);
-        ctx.lineTo(endX2, endY2); // Línea recta hacia la izquierda
+        ctx.lineTo(startX + lineLength, startY);
+
+        // Calcular las coordenadas de inicio del semicírculo vertical
+        const semicircleStartX = startX + lineLength; // Coordenada X de inicio del semicírculo vertical
+        const semicircleStartY = startY; // Coordenada Y de inicio del semicírculo vertical
+
+        // Dibujar el semicírculo vertical
+        const radius = 100; // Radio del semicírculo vertical
+        const startAngle = -Math.PI / 2;
+        const endAngle = Math.PI / 2;
+
+        ctx.arc(semicircleStartX, semicircleStartY, radius, startAngle, endAngle);
 
         // Finalizar el trazado
         ctx.stroke();
