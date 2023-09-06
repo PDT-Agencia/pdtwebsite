@@ -16,9 +16,11 @@
 
 </head>
 
-<body class="antialiased">
+<body class="">
 
-    <div class="hola ">
+  
+    <div class="background-container ">
+        
         <nav class="container pt-4 navbar navbar-light  justify-content-between">
             <a class="navbar-brand"><svg xmlns="http://www.w3.org/2000/svg" width="94" height="41"
                     viewBox="0 0 94 41" fill="none">
@@ -28,13 +30,37 @@
                 </svg></a>
 
             <div>
-                <div class="btn btn-light rounded-circle mx-3 my-2 my-sm-0">
+                <div class="btn mx-4 text-white  my-2 my-sm-0">
+
+                    Nuestros servicios
+
+
+                </div>
+                <div class="btn mx-4 text-white  my-2 my-sm-0">
+
+                    Portafolio
+
+
+                </div>
+                <div class="btn mx-4 text-white  my-2 my-sm-0">
+
+                    Acerca de
+
+
+                </div>
+                <div class="btn mx-4 text-white  my-2 my-sm-0">
+
+                    Blog
+
+
+                </div>
+                <div style="" class="my-2 btn fill mx-4 my-sm-0">
                     Contáctanos
                 </div>
                 <div class="btn text-white  my-2 my-sm-0">
-                    
-                        Idioma
-                    
+
+                    Idioma
+
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8"
                         fill="none">
                         <path
@@ -45,17 +71,28 @@
             </div>
 
         </nav>
-        <main>
-            {{ $slot }}
-        </main>
     </div>
-    < <script src="https://cdn.canvasjs.com/ga/canvasjs.stock.min.js"></script>
+    
+    <main>
+        {{ $slot }}
+    </main>
+
+   
+    <script src="https://cdn.canvasjs.com/ga/canvasjs.stock.min.js"></script>
 </body>
 <style>
-    .hola {
+   .background-container {
         background: url('{{ asset('image/hombre.png') }}'), lightgray 50% / cover no-repeat;
+      
+        height: 960px;
+        flex-shrink: 0;
+    }
 
-
+    /* Estilos para el contenedor principal de contenido */
+    body {
+        overflow-y: scroll; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
+        height: 100vh; /* Ocupa toda la altura de la ventana */
+    
     }
 
     p {
@@ -65,6 +102,12 @@
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+    }
+
+    .fill {
+        border-radius: 13.5px;
+        background: var(--Blanco-PDT, #FFF);
+
     }
 </style>
 
