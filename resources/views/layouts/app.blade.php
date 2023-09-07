@@ -18,9 +18,10 @@
 
 <body class="">
 
-  
+
     <div class="background-container ">
         
+
         <nav class="container pt-4 navbar navbar-light  justify-content-between">
             <a class="navbar-brand"><svg xmlns="http://www.w3.org/2000/svg" width="94" height="41"
                     viewBox="0 0 94 41" fill="none">
@@ -31,20 +32,20 @@
 
             <div>
                 <div class="btn mx-4 text-white  my-2 my-sm-0">
-
-                    Nuestros servicios
-
-
-                </div>
-                <div class="btn mx-4 text-white  my-2 my-sm-0">
-
-                    Portafolio
+                  {{__('Our Services')}}
+                    
 
 
                 </div>
                 <div class="btn mx-4 text-white  my-2 my-sm-0">
 
-                    Acerca de
+                    {{__('Portfolio')}}
+
+
+                </div>
+                <div class="btn mx-4 text-white  my-2 my-sm-0">
+
+                    {{__('About Us')}}
 
 
                 </div>
@@ -54,12 +55,12 @@
 
 
                 </div>
-                <div style="" class="my-2 btn fill mx-4 my-sm-0">
-                    Contáctanos
+                <div style=""  class="button-cont hover:text-white my-2 btn fill mx-4 my-sm-0">
+                    {{__('Contact')}}
                 </div>
                 <div class="btn text-white  my-2 my-sm-0">
 
-                    Idioma
+                    {{__('Language')}}
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8"
                         fill="none">
@@ -72,27 +73,58 @@
 
         </nav>
     </div>
-    
+
     <main>
         {{ $slot }}
     </main>
+    <div class="a position-absolute  start-50">
 
-   
-    <script src="https://cdn.canvasjs.com/ga/canvasjs.stock.min.js"></script>
+        <script src="https://cdn.canvasjs.com/ga/canvasjs.stock.min.js"></script>
 </body>
 <style>
-   .background-container {
-        background: url('{{ asset('image/hombre.png') }}'), lightgray 50% / cover no-repeat;
-      
-        height: 960px;
-        flex-shrink: 0;
+    .button-cont{
+        color: var(--Rojo-PDT, #DE383F);
+     
+  /* Cambia el color de fondo al pasar el cursor */
+
     }
+    .button-cont:hover{
+     
+ color: white; /* Cambia el color de fondo al pasar el cursor */
+
+    }
+    .background-container {
+        position: relative;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%), url('{{ asset('image/hombre.png') }}');
+        background-size:cover;
+        height: 100%;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .background-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+
+
+
+
+
 
     /* Estilos para el contenedor principal de contenido */
     body {
-        overflow-y: scroll; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
-        height: 100vh; /* Ocupa toda la altura de la ventana */
-    
+        overflow-y: scroll;
+        /* Agrega una barra de desplazamiento vertical cuando sea necesario */
+        height: 100vh;
+        /* Ocupa toda la altura de la ventana */
+
     }
 
     p {
