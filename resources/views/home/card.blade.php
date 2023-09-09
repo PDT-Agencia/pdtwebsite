@@ -1,5 +1,5 @@
 <div>
-<div class=" bg-black">
+    <div class=" bg-black">
         <div class="m">
             <div class="container ">
                 <div class=" row row-cols-1 row-cols-md-4 g-4">
@@ -30,10 +30,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
 
     </div>
 </div>
