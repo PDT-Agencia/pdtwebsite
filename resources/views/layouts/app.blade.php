@@ -33,6 +33,47 @@
     <script src="https://cdn.canvasjs.com/ga/canvasjs.stock.min.js"></script>
 </body>
 <style>
+
+    @font-face {
+        font-family: 'Montserrat-Regular';
+        src: url('../assets/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    }
+
+
+    @font-face {
+        font-family: 'Montserrat-Light';
+        src: url('../assets/fonts/Montserrat/static/Montserrat-Light.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Montserrat-Bold';
+        src: url('../assets/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    }
+
+    body{
+        font-family: Montserrat-Regular;
+    }
+    .navbar a{
+        font-family: Montserrat-Light;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-contact a{
+        font-family: Montserrat-Bold;
+        color: #DE383F;
+    }
+
+
+    .home-services .card{
+        width: 252px;
+        height: 347px;
+        border: none;
+    }
     .client {
         color: var(--Negro-PDT, #171D2A);
         font-family: Montserrat;
@@ -149,6 +190,174 @@
         background: var(--Blanco-PDT, #FFF);
 
     }
+
+    #bulb{
+        background-color: black;
+        padding-bottom: 15%;
+        margin-top: -100px;
+    }
+
+
+
+    @keyframes parpadeo {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+
+
+        @keyframes parpadeoText {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: .2;
+            }
+        }
+
+
+        #content {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        #content-bombilla{
+            position: relative;
+        }
+
+        #bombilla {
+            width: 780px;
+            position: absolute;
+            z-index: 100;
+        }
+
+        #luz {
+            position: relative;
+            width: 780px;
+            z-index: 200;
+            opacity: 0;
+        }
+
+        .content-items{
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content-item-left{
+            position: absolute;
+            top: 300px;
+            left: -200px;
+        }
+
+        .content-item-right{
+            position: absolute;
+            top: 300px;
+            right:-200px;
+        }
+
+        .content-items .item p{
+            font-family: Montserrat-Light;
+            color: white;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin: 0;
+        }
+
+        .text-align-right p{
+            text-align: right;
+            line-height: 3%;
+        }
+
+        .text-align-left p{
+            text-align: left;
+        }
+
+        .margin-left{
+            margin-left: 65px;
+        }
+
+       
+        .item{
+            opacity: 0;
+            padding: 7% 5%;
+        }
+
+        .item-option{
+            display: flex;
+            align-items: center;
+        }
+
+        .item img{
+            margin-right: 10px;
+        }
+
 </style>
+
+
+<script>
+  
+  function handleIntersection(entries, observer) {
+
+    
+    entries.forEach(function (entry) {
+        const element = entry.target;
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+            
+            element.style.animation = "parpadeo .15s infinite, detenerAnimacion 4s 1 forwards";
+
+
+            const elements = document.querySelectorAll(".animation");
+            elements.forEach(function (item) {
+                item.style.animation = "parpadeoText .15s infinite, detenerAnimacion 4s 1 forwards"; 
+                item.style.opacity = 1;
+
+                setTimeout(() => {
+                    item.style.animation = 'none'
+                    item.style.opacity = 1;
+                }, 1000);
+
+            });
+
+            setTimeout(() => {
+                element.style.animation = 'none'
+                element.style.opacity = 1;
+            }, 1000);
+        }, 2000);
+        
+      }else{
+        
+        element.style.opacity = 0;
+        const elements = document.querySelectorAll(".animation");
+        elements.forEach(function (item) {
+            item.style.opacity = 0;
+        });
+
+      }
+    });
+  }
+
+  
+  const observer = new IntersectionObserver(handleIntersection, {
+    threshold: 0, 
+  });
+
+  const luz = document.getElementById("luz");
+  observer.observe(luz);
+
+
+</script>
+
+
 
 </html>

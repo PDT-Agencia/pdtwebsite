@@ -1,4 +1,4 @@
-<div>
+<div id='contact-content'>
     <div class="row row-cols-3">
         <div class="row row-cols-2">
             <div>
@@ -156,9 +156,15 @@
                 if (snout) seguirCursor(snout, 15, 15);
                 if (nose) seguirCursor(nose, 4, 4);
             };
-            window.addEventListener("resize", definirTamaPantalla);
-            window.addEventListener("mousemove", mouseMove);
-            window.addEventListener('touchmove', touchMove);
+
+
+
+            const content = document.getElementById("contact-content");
+            content.addEventListener("resize", definirTamaPantalla);
+            content.addEventListener("mousemove", mouseMove);
+            content.addEventListener('touchmove', touchMove);
+
+
         </script>
     @endpush
 </div>
