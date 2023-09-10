@@ -1,6 +1,6 @@
 <div id='contact-content'>
     <div class="row row-cols-3">
-        <div class="row row-cols-2">
+        <div class="row col-4 row-cols-2">
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" height="800" viewBox="0 -20 446.4 686.5">
                     <title>Curious Bear</title>
@@ -89,6 +89,43 @@
 
 
         </div>
+        <div class="col-8  border-start">
+            <div class="row container">
+                <div class="col-6">
+                    Nombre y Compañia <br>
+                    <input type="text">            
+                </div>
+                <div class="col-6">
+                    Tu Email<br>
+                    <input type="text">            
+                </div> <br> <br>
+                <h3>Estoy interesado en</h3> 
+            
+                <div class="row ">
+                    <p class="col-3 text-black">Desarrollo web</p>
+                    <p class="col-3 text-black">Creación de App</p>
+                    <p class="col-3 text-black">Diseño UI/XI</p>
+                    <p class="col-3 text-black">Diseño de marca</p>
+                    <p class="col-3 text-black">Creación de Web</p>
+                    <p class="col-3 text-black">Desarrollo de App</p>
+                    <p class="col-3 text-black">Mantenimiento</p>
+                    <p class="col-3 text-black">Diseño gráfico</p>
+                    <p class="col-3 text-black">Producción Audiovisual</p>
+                    <p class="col-3 text-black">Manejo de redes</p>
+                    <p class="col-3 text-black">Otros</p>
+
+
+
+
+                </div>
+            </div>
+            <div>
+            Cuentanos más sobre tu proyecto
+            <textarea name="" id="" cols="100" rows="5"></textarea>
+            </div>
+        </div>
+        
+       
     </div>
     @push('scripts')
         <script>
