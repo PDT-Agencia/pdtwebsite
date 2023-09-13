@@ -51,7 +51,7 @@
     "More than 8 years of experience": "Más de 8 años de experiencia",
     "Name and Company":"Nombre y compañía",
     "Your email":"Tu email",
-    "I am interested in:":"Estoy interesado en:",
+    "I am interested in...":"Estoy interesado en...",
     "Web development":"Desarrollo web",
     "App development":"Desarrollo de app",
     "UI/UX Design":"Diseño UI/XI",
@@ -66,6 +66,6 @@
     "Tell us more about your project.":"Cuentanos más sobre tu proyecto.",
     "We are pdt":"Somos pdt",
     "Access":"Accesos",
-    "Follow us on":"Síguenos en:"
+    "Follow us on:":"Síguenos en:"
 
 }

@@ -1,5 +1,5 @@
 <div>
-    <h2 class="client font-bold container text-center ">
+    <h2 class="client  container text-center ">
                 {{ __('OUR CLIENTS') }}
     </h2>
     <div class="container my-5 ">

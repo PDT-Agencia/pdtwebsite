@@ -1,8 +1,8 @@
 <div class="container">
-    <div class="row">
-        <div class="col-4 mt-4 container">
-            <h5 class="text-white ">{{ __('We are pdt') }}</h5>
-            <p class="text-white">Innovar objetivamente productos manufacturados
+    <div class="row container">
+        <div class="col-lg-5 col-10 mt-4">
+            <h5 class="footer-font ">{{ __('We are pdt') }}</h5>
+            <p class="footer-p">Innovar objetivamente productos manufacturados
                 empoderados mientras que las plataformas paralelas.
                 Predominan de manera holística los procedimientos
                 de prueba extensibles para cadenas de suministro
@@ -11,17 +11,17 @@
 
         </div>
         <div class="col-2 mt-4">
-            <h5 class="text-white">{{ __('Access') }}</h5>
-            <p class="text-white">{{ __('Our Services') }}</p>
-            <p class="text-white">{{ __('Portfolio') }}</p>
-            <p class="text-white">{{ __('About Us') }}</p>
+            <h5 class="footer-font">{{ __('Access') }}</h5>
+            <p class="footer-p">{{ __('Our Services') }}</p>
+            <p class="footer-p">{{ __('Portfolio') }}</p>
+            <p class="footer-p">{{ __('About Us') }}</p>
         </div>
-        <div class="col-4 mt-4">
-            <h5 class="text-white">{{ __('Contact') }}</h5>
-            <p class="text-white">Av. El Poblado #5A-113, El Poblado, <br>
+        <div class="col-lg-4 col-11 mt-4">
+            <h5 class="footer-font ">{{ __('Contact') }}</h5>
+            <p class="footer-p">Av. El Poblado #5A-113, El Poblado, <br>
                 Medellín, El Poblado, Medellín, Antioquia <br> <br>
                 pdtcomunicaciones@gmail.com</p> <br>
-            <p class="text-white"> {{ __('Follow us on:') }}</p>
+            <p class="footer-font"> {{ __('Follow us on:') }}</p>
             <div class="row">
                 <div class="col-2 mx-2 circulo">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
@@ -66,30 +66,23 @@
                 </div>
             </div>
         </div>
-        <div class="col-2 mt-4">
-            <div class="circulo">
+        <div class="col-1 mt-4">
+            <div class="circulo-end">
 
             </div>
             <br>
-            <div class="circulo">
+            <div class="circulo-end">
 
             </div>
             <br>
-            <div class="circulo">
+            <div class="circulo-end">
 
             </div>
         </div>
     </div>
     <style>
-        .circulo {
-            width: 100px;
-            /* Ancho del círculo */
-            height: 100px;
-            /* Altura del círculo, igual que el ancho para que sea un círculo perfecto */
-            border-radius: 50%;
-            /* Establece el radio de borde al 50% para crear un círculo */
-          
-            /* Espacio entre los círculos */
+        .circulo-end {
+         
             display: flex;
             justify-content: center;
             align-items: center;
@@ -102,7 +95,7 @@
             border-radius: 50%;
         }
 
-        .circulo svg {
+        .circulo-end svg {
             width: 100%;
             /* Ajusta el tamaño de la imagen para que se ajuste al círculo */
             height: auto;

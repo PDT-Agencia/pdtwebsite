@@ -1,7 +1,7 @@
 <div id='contact-content'>
-    <div class="row row-cols-3">
-        <div class="row col-4 row-cols-2">
-            <div>
+    <div class="row">
+        <div class="row col-12 col-lg-5 ">
+            <div class=" col-5">
                 <svg xmlns="http://www.w3.org/2000/svg" height="800" viewBox="0 -20 446.4 686.5">
                     <title>Curious Bear</title>
                     <g id="bear">
@@ -81,71 +81,72 @@
                 </svg>
             </div>
 
-            <div class="mt-3">
-                <h3>{{ __('¿YOU HAVE A GREAT IDEA?') }}</h3>
+            <div class="mt-3 col-7">
+                <h3 class="idea">{{ __('¿YOU HAVE A GREAT IDEA?') }}</h3>
 
-                <p class="text-black">{{ __('Tell us about her') }}</p>
+                <p class="idea_parraf text-black">{{ __('Tell us about her') }}</p>
             </div>
 
 
         </div>
-        <div class="col-8  border-start">
-            <div class="row container">
+        <div class="col-12 col-lg-7  border-start">
+            <div class="row ">
                 <div class="col-6">
-                    {{__("Name and Company")}} <br>
+                    <label class="">
+                    {{__("Name and Company")}}</label> 
                     <input type="text" class="form-control">
                 </div>
-                <div class="col-6">
-                    {{__("Your email")}}<br>
+                <div class="col-6"><label for=""> {{__("Your email")}}</label>
+                   
                     <input type="text" class="form-control">
                 </div> <br> <br>
-                <h3 class="mt-5 ">{{__("I am interested in:")}}</h3>
+                <label class="mt-5 mb-3">{{__("I am interested in...")}}</label> <br> <br>
 
                 <div class="row ">
-                    <div class="col-3">
-                        <p class=" text-black service text-center p-3 mx-1  ">{{__("Web development")}}</p>
+                    <div class="col-xl-3 col-6 col-md-4">
+                        <p class="service text-center p-3 mx-1  ">{{__("Web development")}}</p>
                     </div>
-                    <div class="col-3">
-                        <p class=" text-black service text-center p-3 mx-1 ">{{__("App development")}}</p>
+                    <div class="col-xl-3 col-6 col-md-4">
+                        <p class="service text-center p-3 mx-1 ">{{__("App development")}}</p>
                     </div>
-                    <div class="col-3">
-                        <p class=" text-black service text-center p-3 mx-1 ">{{__("UI/UX Design")}}</p>
+                    <div class="col-xl-3 col-6 col-md-4">
+                        <p class="service text-center p-3 mx-1 ">{{__("UI/UX Design")}}</p>
                     </div>
-                    <div class="col-3">
-                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Brand design")}}</p>
+                    <div class="col-xl-3 col-6 col-md-4">
+                        <p class="service text-center p-3 mx-1 ">{{__("Brand design")}}</p>
                     </div>
-                    <div class="col-3">
-                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Web maintenance")}}</p>
+                    <div class="col-xl-3 col-6 col-md-4">
+                        <p class="service text-center p-3 mx-1 ">{{__("Web maintenance")}}</p>
                     </div>
-                    <div class="col-3">
-                        <p class=" text-black service text-center p-3 mx-1 ">{{__("App maintenance")}}</p>
+                    <div class="col-xl-3 col-6 col-md-4">
+                        <p class="service text-center p-3 mx-1 ">{{__("App maintenance")}}</p>
                     </div>
-                    <div class="col-3">
-                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Maintenance")}}</p>
+                    <div class="col-xl-3 col-6 col-md-4">
+                        <p class="service text-center p-3 mx-1 ">{{__("Maintenance")}}</p>
                     </div>
-                    <div class="col-3">
-                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Graphic design")}}</p>
+                    <div class="col-xl-3 col-6 col-md-4">
+                        <p class="service text-center p-3 mx-1 ">{{__("Graphic design")}}</p>
                     </div>
-                    <div class="col-3">
-                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Audiovisual production")}}</p>
+                    <div class="col-xl-3 col-6 col-md-4">
+                        <p class="service text-center p-3 mx-1 ">{{__("Audiovisual production")}}</p>
                     </div>
-                    <div class="col-3">
-                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Network management")}}</p>
+                    <div class="col-xl-3 col-6 col-md-4">
+                        <p class="service text-center p-3 mx-1 ">{{__("Network management")}}</p>
 
                     </div>
-                    <div class="col-3">
-                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Others")}}</p>
+                    <div class="col-xl-3 col-6 col-md-4">
+                        <p class="service text-center p-3 mx-1 ">{{__("Others")}}</p>
 
                     </div>
 
 
                 </div>
             </div>
-            <div>
-                {{__("Tell us more about your project.")}}
-                <textarea name="" id="" cols="100" rows="5"></textarea>
+            <div class="my-5">
+                <label class="mb-2">{{__("Tell us more about your project.")}}</label>
+                <textarea name="" class="rounded" id="" cols="84" rows="5"></textarea>
                 <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="button">Button</button>
+                    <button class="btn btn-dark" type="button">Enviar</button>
                    
                   </div>
             </div>
