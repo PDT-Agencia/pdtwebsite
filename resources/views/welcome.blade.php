@@ -19,10 +19,4 @@
         @include('home.dog')
 
     </div>
-
-
-
-
-
-
 </x-app-layout>

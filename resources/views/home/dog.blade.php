@@ -92,40 +92,66 @@
         <div class="col-8  border-start">
             <div class="row container">
                 <div class="col-6">
-                    Nombre y Compañia <br>
-                    <input type="text">            
+                    {{__("Name and Company")}} <br>
+                    <input type="text" class="form-control">
                 </div>
                 <div class="col-6">
-                    Tu Email<br>
-                    <input type="text">            
+                    {{__("Your email")}}<br>
+                    <input type="text" class="form-control">
                 </div> <br> <br>
-                <h3>Estoy interesado en</h3> 
-            
+                <h3 class="mt-5 ">{{__("I am interested in:")}}</h3>
+
                 <div class="row ">
-                    <p class="col-3 text-black">Desarrollo web</p>
-                    <p class="col-3 text-black">Creación de App</p>
-                    <p class="col-3 text-black">Diseño UI/XI</p>
-                    <p class="col-3 text-black">Diseño de marca</p>
-                    <p class="col-3 text-black">Creación de Web</p>
-                    <p class="col-3 text-black">Desarrollo de App</p>
-                    <p class="col-3 text-black">Mantenimiento</p>
-                    <p class="col-3 text-black">Diseño gráfico</p>
-                    <p class="col-3 text-black">Producción Audiovisual</p>
-                    <p class="col-3 text-black">Manejo de redes</p>
-                    <p class="col-3 text-black">Otros</p>
+                    <div class="col-3">
+                        <p class=" text-black service text-center p-3 mx-1  ">{{__("Web development")}}</p>
+                    </div>
+                    <div class="col-3">
+                        <p class=" text-black service text-center p-3 mx-1 ">{{__("App development")}}</p>
+                    </div>
+                    <div class="col-3">
+                        <p class=" text-black service text-center p-3 mx-1 ">{{__("UI/UX Design")}}</p>
+                    </div>
+                    <div class="col-3">
+                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Brand design")}}</p>
+                    </div>
+                    <div class="col-3">
+                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Web maintenance")}}</p>
+                    </div>
+                    <div class="col-3">
+                        <p class=" text-black service text-center p-3 mx-1 ">{{__("App maintenance")}}</p>
+                    </div>
+                    <div class="col-3">
+                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Maintenance")}}</p>
+                    </div>
+                    <div class="col-3">
+                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Graphic design")}}</p>
+                    </div>
+                    <div class="col-3">
+                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Audiovisual production")}}</p>
+                    </div>
+                    <div class="col-3">
+                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Network management")}}</p>
 
+                    </div>
+                    <div class="col-3">
+                        <p class=" text-black service text-center p-3 mx-1 ">{{__("Others")}}</p>
 
+                    </div>
 
 
                 </div>
             </div>
             <div>
-            Cuentanos más sobre tu proyecto
-            <textarea name="" id="" cols="100" rows="5"></textarea>
+                {{__("Tell us more about your project.")}}
+                <textarea name="" id="" cols="100" rows="5"></textarea>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button">Button</button>
+                   
+                  </div>
             </div>
         </div>
-        
-       
+
+
     </div>
     @push('scripts')
         <script>
@@ -200,8 +226,6 @@
             content.addEventListener("resize", definirTamaPantalla);
             content.addEventListener("mousemove", mouseMove);
             content.addEventListener('touchmove', touchMove);
-
-
         </script>
     @endpush
 </div>
