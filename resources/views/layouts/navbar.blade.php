@@ -30,7 +30,7 @@
             </ul>
             <ul class="navbar-nav  mb-2 mb-lg-0">
                 <li class="btn mx-4 text-white  my-2 my-sm-0">
-                    <a href="{{ route('team') }}">{{ __('Our Services') }}</a>
+                    <a href="{{ route('service') }}">{{ __('Our Services') }}</a>
                 </li>
                 <li class="btn mx-4 text-white  my-2 my-sm-0">
                     <a href="#">{{ __('Portfolio') }}</a>

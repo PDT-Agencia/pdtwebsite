@@ -66,7 +66,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-1 mt-4">
+        <div class="col-1 text-end mt-4">
             <div class="circulo-end">
 
             </div>

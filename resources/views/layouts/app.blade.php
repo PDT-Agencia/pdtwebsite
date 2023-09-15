@@ -36,9 +36,12 @@
         }
         
     @endphp
+    
+
+    @if (isset($image))
     <style>
         .background-container {
-            position: relative;
+        
             background:  linear-gradient({{$background}} ), url('{{ asset('image/' . $image) }}');
             background-size: cover;
             background-repeat: no-repeat;
@@ -52,9 +55,11 @@
 
         }
     </style>
+    @endif
+    
 
 
-    <div class="background-container ">
+    <div class="background-container bg-black">
 
 
         @include('layouts.navbar')
@@ -64,11 +69,11 @@
 
 
 
-
+    <div class="bg-black">
     <main>
         {{ $slot }}
     </main>
-    <div class="bg-black">
+    
         @include('layouts.footer')
     </div>
 
@@ -79,6 +84,8 @@
     <script src="{{ asset('vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js') }}"></script>
 </body>
 
+
 @stack('scripts')
+
 
 </html>
