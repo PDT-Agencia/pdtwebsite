@@ -26,37 +26,37 @@
         
         if ($route == 'home') {
             $image = 'hombre.png';
-            $background ="180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%";
+            $background = '180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%';
         } elseif ($route == 'about') {
             $image = 'office.png';
-            $background ="180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%";
-        }elseif($route == "team") {
+            $background = '180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%';
+        } elseif ($route == 'team') {
             $image = 'team.png';
-            $background ="180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%";
+            $background = '180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%';
         }
         
     @endphp
-    
+
 
     @if (isset($image))
-    <style>
-        .background-container {
-        
-            background:  linear-gradient({{$background}} ), url('{{ asset('image/' . $image) }}');
-            background-size: cover;
-            background-repeat: no-repeat;
-          
-            /* Opcional: para centrar la imagen */
-            height: 100%;
-            flex-shrink: 0;
-            overflow: hidden;
-            
+        <style>
+            .background-container {
+
+                background: linear-gradient({{ $background }}), url('{{ asset('image/' . $image) }}');
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                /* Opcional: para centrar la imagen */
+                height: 100%;
+                flex-shrink: 0;
+                overflow: hidden;
 
 
-        }
-    </style>
+
+            }
+        </style>
     @endif
-    
+
 
 
     <div class="background-container bg-black">
@@ -69,11 +69,11 @@
 
 
 
-    <div class="bg-black">
+
     <main>
         {{ $slot }}
     </main>
-    
+    <div class="bg-black">
         @include('layouts.footer')
     </div>
 
