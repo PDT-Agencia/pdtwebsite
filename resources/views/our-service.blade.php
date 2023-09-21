@@ -8,17 +8,17 @@
                 <div class="col-6">
                     <h1 class="text-white">
                         Nuestros Servicios
-                    </h3>
+                        </h3>
 
-                    <p class="text-white">
-                        Innovar objetivamente productos manufacturados
-                        empoderados mientras que las plataformas parale
-                        las. Predominan de manera holística los procedimi
-                        entos de prueba extensibles para cadenas de sumi
-                        nistro con fiables. Involucre drásticamente los servi
-                        cios web de primera línea frente a los entregables
-                        de vanguardia. afdfdajfgbdig dafhdbhiadsfad sdfas
-                    </p>
+                        <p class="text-white">
+                            Innovar objetivamente productos manufacturados
+                            empoderados mientras que las plataformas parale
+                            las. Predominan de manera holística los procedimi
+                            entos de prueba extensibles para cadenas de sumi
+                            nistro con fiables. Involucre drásticamente los servi
+                            cios web de primera línea frente a los entregables
+                            de vanguardia. afdfdajfgbdig dafhdbhiadsfad sdfas
+                        </p>
                 </div>
                 <div class="col-6">
 
@@ -65,7 +65,7 @@
                 <img src="{{ asset('image/Rectangle 80.png') }}" alt="">
             </div>
 
-            
+
             <div class="row text-white serv">
                 <div class="col-4">
                     <h3>Nuestros Servicios</h3>
@@ -106,7 +106,7 @@
                         sdgfdsgjdsifgnoisa sajgnsdndg.
                     </p>
                 </div>
-    
+
                 <div class="col-4">
                     <h3>Nuestros Servicios</h3>
                     <p>
@@ -133,8 +133,8 @@
                         sdgfdsgjdsifgnoisa sajgnsdndg.
                     </p>
                 </div>
-    
-    
+
+
                 <div class="col-4">
                     <h3>Nuestros Servicios</h3>
                     <p>
@@ -149,10 +149,10 @@
                     </p>
                 </div>
             </div>
-           
+
 
         </div>
-        
+
     </div>
     <style>
         .banner {
@@ -165,8 +165,8 @@
 
         .service-image {
             max-width: 100%;
-                        margin-top:5rem;
-                        margin-bottom:5rem;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
 
         }
 
@@ -176,7 +176,8 @@
             /* Asegúrate de que la altura se ajuste automáticamente para mantener la relación de aspecto */
             height: auto;
         }
-        .ser{
+
+        .ser {
             margin: 10rem;
         }
     </style>
