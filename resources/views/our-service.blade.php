@@ -8,7 +8,7 @@
                 <div class="col-6">
                     <h1 class="text-white">
                         Nuestros Servicios
-                    </h1>
+                    </h3>
 
                     <p class="text-white">
                         Innovar objetivamente productos manufacturados
@@ -66,9 +66,9 @@
             </div>
 
             
-            <div class="row">
+            <div class="row text-white serv">
                 <div class="col-4">
-                    <h1>Nuestros Servicios</h1>
+                    <h3>Nuestros Servicios</h3>
                     <p>
                         Innovar objetivamente productos manufactu
                         safadsgshgas dasjgandgnao dasghdafignags
@@ -81,7 +81,7 @@
                     </p>
                 </div>
                 <div class="col-4">
-                    <h1>Nuestros Servicios</h1>
+                    <h3>Nuestros Servicios</h3>
                     <p>
                         Innovar objetivamente productos manufactu
                         safadsgshgas dasjgandgnao dasghdafignags
@@ -94,34 +94,7 @@
                     </p>
                 </div>
                 <div class="col-4">
-                    <h1>Nuestros Servicios</h1>
-                    <p>
-                        Innovar objetivamente productos manufactu
-                        safadsgshgas dasjgandgnao dasghdafignags
-                        sadgonasdgaisd gajsdngasdg fgdfgfdgfdhhf
-                        gasgasdgasdgfad gdafgadfhna dnsagig ddg
-                        agadfga oaoignrne fgfudgnadg fagaugnfadg
-                        adgaisgnasidgns jdngids . idsfiudng jdndsdd
-                        dgnouiiuurehsd udnbsfnhds fh is h fhs asffdd
-                        sdgfdsgjdsifgnoisa sajgnsdndg.
-                    </p>
-                </div>
-    
-                <div class="col-4">
-                    <h1>Nuestros Servicios</h1>
-                    <p>
-                        Innovar objetivamente productos manufactu
-                        safadsgshgas dasjgandgnao dasghdafignags
-                        sadgonasdgaisd gajsdngasdg fgdfgfdgfdhhf
-                        gasgasdgasdgfad gdafgadfhna dnsagig ddg
-                        agadfga oaoignrne fgfudgnadg fagaugnfadg
-                        adgaisgnasidgns jdngids . idsfiudng jdndsdd
-                        dgnouiiuurehsd udnbsfnhds fh is h fhs asffdd
-                        sdgfdsgjdsifgnoisa sajgnsdndg.
-                    </p>
-                </div>
-                <div class="col-4">
-                    <h1>Nuestros Servicios</h1>
+                    <h3>Nuestros Servicios</h3>
                     <p>
                         Innovar objetivamente productos manufactu
                         safadsgshgas dasjgandgnao dasghdafignags
@@ -134,9 +107,36 @@
                     </p>
                 </div>
     
+                <div class="col-4">
+                    <h3>Nuestros Servicios</h3>
+                    <p>
+                        Innovar objetivamente productos manufactu
+                        safadsgshgas dasjgandgnao dasghdafignags
+                        sadgonasdgaisd gajsdngasdg fgdfgfdgfdhhf
+                        gasgasdgasdgfad gdafgadfhna dnsagig ddg
+                        agadfga oaoignrne fgfudgnadg fagaugnfadg
+                        adgaisgnasidgns jdngids . idsfiudng jdndsdd
+                        dgnouiiuurehsd udnbsfnhds fh is h fhs asffdd
+                        sdgfdsgjdsifgnoisa sajgnsdndg.
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h3>Nuestros Servicios</h3>
+                    <p>
+                        Innovar objetivamente productos manufactu
+                        safadsgshgas dasjgandgnao dasghdafignags
+                        sadgonasdgaisd gajsdngasdg fgdfgfdgfdhhf
+                        gasgasdgasdgfad gdafgadfhna dnsagig ddg
+                        agadfga oaoignrne fgfudgnadg fagaugnfadg
+                        adgaisgnasidgns jdngids . idsfiudng jdndsdd
+                        dgnouiiuurehsd udnbsfnhds fh is h fhs asffdd
+                        sdgfdsgjdsifgnoisa sajgnsdndg.
+                    </p>
+                </div>
+    
     
                 <div class="col-4">
-                    <h1>Nuestros Servicios</h1>
+                    <h3>Nuestros Servicios</h3>
                     <p>
                         Innovar objetivamente productos manufactu
                         safadsgshgas dasjgandgnao dasghdafignags
@@ -165,6 +165,8 @@
 
         .service-image {
             max-width: 100%;
+                        margin-top:5rem;
+                        margin-bottom:5rem;
 
         }
 
@@ -173,6 +175,9 @@
             width: 100%;
             /* Asegúrate de que la altura se ajuste automáticamente para mantener la relación de aspecto */
             height: auto;
+        }
+        .ser{
+            margin: 10rem;
         }
     </style>
 
