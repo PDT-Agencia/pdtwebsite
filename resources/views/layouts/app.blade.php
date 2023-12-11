@@ -26,7 +26,7 @@
         
         if ($route == 'home') {
             $image = 'hombre.png';
-            $background = '180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%';
+            $background = '180deg, rgba(0, 0, 0, 0.00) 90%, #000 100%';
         } elseif ($route == 'about') {
             $image = 'office.png';
             $background = '180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%';
@@ -47,7 +47,7 @@
                 background-repeat: no-repeat;
 
                 /* Opcional: para centrar la imagen */
-                height: 100%;
+                height: 100vh;
                 flex-shrink: 0;
                 overflow: hidden;
 
@@ -64,10 +64,37 @@
 
         @include('layouts.navbar')
 
+       <div class="hero-note-footer">
+            <div class="hero-note-regtangle"></div>
+            <div>
+                <div class="hero-note-flex">
+                    <p class="hero-note-footer-text">Creamos <span class="hero-note-footer-text-bold">experiencias</span></p>
+                </div>
+                
+                <div class="hero-note-flex-2">
+                    <p class="hero-note-footer-text">Consolidamos <span class="hero-note-footer-text-bold">sueños</span></p>
+                </div>
+            </div>
+       </div>
+
+       <div class="hero-note-footer-icons">
+            <div class="">
+                <img src="{{ asset('image/play.png') }}" class="rounded card-img-top" alt="...">
+            </div>
+
+           
+       </div>
 
     </div>
 
-
+    <div class="hero-note-footer-location">
+        <div class="hero-note-footer-container">
+            <div class="hero-note-footer-location-pagination-select"></div>
+            <div class="hero-note-footer-location-pagination"></div>
+            <div class="hero-note-footer-location-pagination"></div>
+            <div class="hero-note-footer-location-pagination"></div>
+        </div>
+    </div>
 
 
     <main>

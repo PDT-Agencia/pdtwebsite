@@ -50,7 +50,7 @@
 }
 
 body {
-    font-family: Montserrat-Regular;
+    /*font-family: Montserrat-Regular;*/
 }
 
 .navbar a {
@@ -65,7 +65,8 @@ body {
 
 .nav-contact a {
     font-family: Montserrat-Bold;
-    color: #DE383F;
+    color: #FFF;
+    font-weight: 700;
 }
 
 .footer-font {
@@ -186,9 +187,17 @@ label {
 //navbar start 
 .button-cont {
     color: var(--Rojo-PDT, #DE383F);
-
+    height: 27px;
+    display: flex;
+    align-items: center;
+    padding: 5px 18px;
     /* Cambia el color de fondo al pasar el cursor */
 
+}
+
+.nav-ul-flex{
+    display: flex;
+    align-items: center;
 }
 
 .button-cont:hover {
@@ -200,11 +209,12 @@ label {
 
 .fill {
     border-radius: 13.5px;
-    background: var(--Blanco-PDT, #FFF);
+    background: var(--Blanco-PDT, #DE383F);
 
 }
 
 //navbar end
+
 
 //background
 
@@ -218,10 +228,83 @@ label {
     z-index: 0;
 }
 
+.hero-note-footer {
+    position: relative;
+    top: 55%;
+    left: 5%;
+    display: flex
+}
 
+.hero-note-regtangle {
+    width: 6px;
+    height: 84px;
+    background-color: #DE383F;
+    border-radius: 20px;
+    margin-right: 14px;
+}
 
+.hero-note-footer-text {
+    font-size: 30px;
+    color: #FFF;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
 
+.hero-note-footer-text-bold {
+    font-size: 30px;
+    color: #FFF;
+    font-weight: 700;
+}
 
+.hero-note-flex {
+    display: flex;
+    height: 31px;
+}
+
+.hero-note-flex-2 {
+    display: flex;
+    height: 31px;
+    margin-top: 10px;
+}
+
+.hero-note-footer-location {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-note-footer-container {
+    display: flex;
+    width: 80%;
+    height: 4px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.hero-note-footer-location-pagination {
+    width: 23%;
+    height: 4px;
+    background-color: #FFF;
+    border-radius: 14px;
+}
+
+.hero-note-footer-location-pagination-select {
+    width: 23%;
+    height: 4px;
+    background-color: #DE383F;
+    border-radius: 14px;
+}
+
+.hero-note-footer-icons {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 5%;
+    top: 66%;
+}
 
 
 /* Estilos para el contenedor principal de contenido */
@@ -230,11 +313,7 @@ body {
     /* Agrega una barra de desplazamiento vertical cuando sea necesario */
     height: 100vh;
     /* Ocupa toda la altura de la ventana */
-
 }
-
-
-
 
 
 //bombillo start

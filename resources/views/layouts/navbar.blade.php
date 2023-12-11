@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light  container pt-4">
+<nav class="navbar navbar-expand-lg navbar-light container pt-4">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ route('home') }}">
             <svg xmlns="http://www.w3.org/2000/svg" width="96" height="38" viewBox="0 0 96 38" fill="none">
@@ -28,23 +28,23 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             </ul>
-            <ul class="navbar-nav  mb-2 mb-lg-0">
-                <li class="btn mx-4 text-white  my-2 my-sm-0">
+            <ul class="nav-ul-flex navbar-nav mb-2 mb-lg-0">
+                <li class="btn mx-1 text-white  my-2 my-sm-0">
                     <a href="{{ route('service') }}">{{ __('Our Services') }}</a>
                 </li>
-                <li class="btn mx-4 text-white  my-2 my-sm-0">
+                <li class="btn mx-1 text-white  my-2 my-sm-0">
                     <a href="#">{{ __('Portfolio') }}</a>
                 </li>
-                <li class="btn mx-4 text-white  my-2 my-sm-0">
+                <li class="btn mx-1 text-white  my-2 my-sm-0">
                     <a href="{{ route('about') }}">{{ __('About Us') }}</a>
                 </li>
-                <li class="btn mx-4 text-white  my-2 my-sm-0">
+                <li class="btn mx-1 text-white  my-2 my-sm-0">
                     <a href="#">Blog</a>
                 </li>
-                <li class="button-cont hover:text-white my-2 btn fill mx-4 my-sm-0 nav-contact">
+                <li class="button-cont hover:text-white my-2 btn fill mx-1 my-sm-0 nav-contact">
                     <a href="#">{{ __('Contact') }}</a>
                 </li>
-                <li class="  my-2 my-sm-0">
+                <li class="my-2 my-sm-0">
 
                     <div class="dropdown">
                         <a class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
