@@ -1,4 +1,4 @@
-<div class="container footer-container">
+<div class="container container-footer">
     <div class="row container">
         <div class="col-lg-5 col-10 mt-4">
             <h5 class="footer-font ">{{ __('We are pdt') }}</h5>
@@ -62,6 +62,10 @@
             </div>
         </div>
         <div class="col-1 text-end mt-4">
+            <div class="circulo-end">
+                <img src="{{ asset('image/whatsapp.png') }}" class="" alt="...">
+            </div>
+            <br>
             <div class="circulo-end">
                 <img src="{{ asset('image/question.png') }}" class="" alt="...">
             </div>
