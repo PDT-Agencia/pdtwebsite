@@ -77,13 +77,10 @@
             </div>
        </div>
 
-       <div class="hero-note-footer-icons">
-            <div class="">
-                <img src="{{ asset('image/play.png') }}" class="rounded card-img-top" alt="...">
-            </div>
-
-           
-       </div>
+        <div class="hero-note-footer-container-icons">
+            <div><img src="{{ asset('image/play.png') }}" class="hero-note-footer-container-icons-image" alt="..."></div>
+            <div><img src="{{ asset('image/play.png') }}" class="hero-note-footer-container-icons-image" alt="..."></div>
+        </div>
 
     </div>
 
@@ -97,7 +94,7 @@
     </div>
 
 
-    <main>
+    <main class="main-container">
         {{ $slot }}
     </main>
     <div class="bg-black">

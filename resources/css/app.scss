@@ -16,11 +16,17 @@
     line-height: normal;
 }
 
+.home-services {
+    width: 88%;
+}
+
 
 .home-services .card {
     width: 252px;
     height: 347px;
-    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid black;
 }
 
 //service end
@@ -53,6 +59,10 @@ body {
     /*font-family: Montserrat-Regular;*/
 }
 
+.main-container {
+    padding-bottom: 130px;
+}
+
 .navbar a {
     font-family: Montserrat-Light;
     font-size: 14px;
@@ -77,15 +87,14 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 20px;
 }
 
 .footer-p {
     color: var(--Blanco-PDT, #FFF);
-    font-family: Montserrat-light;
+    font-family: Montserrat-regular;
     font-size: 16px;
-    font-style: normal;
     font-weight: 300;
-    line-height: normal;
 }
 
 
@@ -96,7 +105,6 @@ body {
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    margin-top: 350px;
     /* Agrega un margen superior para separar el texto del contenido */
 }
 
@@ -107,6 +115,17 @@ body {
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    /* Agrega un margen superior para separar el texto del contenido */
+}
+
+.idea-two {
+    color: var(--Negro-PDT, #171D2A);
+    font-family: Montserrat-bold;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 19px;
     /* Agrega un margen superior para separar el texto del contenido */
 }
 
@@ -298,14 +317,24 @@ label {
     border-radius: 14px;
 }
 
-.hero-note-footer-icons {
-    height: 40px;
-    width: 40px;
+.hero-note-footer-container-icons {
     position: absolute;
+    width: 100px;
+    height: 84px;
     right: 5%;
     top: 66%;
+    display: flex;
+    justify-content: space-between;
 }
 
+
+
+.hero-note-footer-container-icons img {
+    height: 29px;
+    width: 27px;
+    margin: 0; 
+    flex-shrink: 0;
+}
 
 /* Estilos para el contenedor principal de contenido */
 body {
@@ -361,23 +390,27 @@ body {
 
 #content-bombilla {
     position: relative;
+    height: 1000px;
 }
 
 #bombilla {
-    width: 780px;
+    width: 1266px;
     position: absolute;
     z-index: 100;
+    top: -180px;
 }
+
+
 
 #luz {
     position: relative;
-    width: 780px;
+    width: 1266px;
     z-index: 200;
     opacity: 0;
+    top: -180px;
 }
 
 .content-items {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,13 +419,13 @@ body {
 .content-item-left {
     position: absolute;
     top: 300px;
-    left: -200px;
+    left: 50px;
 }
 
 .content-item-right {
     position: absolute;
     top: 300px;
-    right: -200px;
+    right: 50px;
 }
 
 .content-items .item p {
@@ -422,11 +455,16 @@ body {
 .item {
     opacity: 0;
     padding: 7% 5%;
+    height: 150px;
+}
+
+.item-especial {
+    width: 250px;
 }
 
 .item-option {
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
 .item img {
@@ -455,8 +493,166 @@ body {
     border-radius: 50%;
 }
 
+.circulo-two {
+   
+    /* Altura del círculo, igual que el ancho para que sea un círculo perfecto */
+    border-radius: 50%;
+    /* Establece el radio de borde al 50% para crear un círculo */
+  
+    /* Espacio entre los círculos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    /* Ancho del círculo */
+    height: 48px;
+    /* Altura del círculo, igual que el ancho para que sea un círculo perfecto */
+    background-color: #DE383F;
+    /* Color de fondo del círculo */
+    border-radius: 50%;
+}
+
 .circulo svg {
     width: 100%;
     /* Ajusta el tamaño de la imagen para que se ajuste al círculo */
     height: auto;
+}
+
+.circulo-two svg {
+    width: 100%;
+    /* Ajusta el tamaño de la imagen para que se ajuste al círculo */
+    height: 26px;
+}
+
+// our clients
+.our-client-section {
+    margin-top: 250px;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// video section 
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.video-section-container-one {
+    max-width: 460px;
+}
+
+#contact-content {
+    padding-top: 100px;
+    width: 95%;
+    margin: auto;
+}
+
+// dog section
+.dog-content-two {
+    padding-left: 44px;
+    padding-top: 10px;
+    height: 640px;
+}
+
+.button-services-dog-section p{
+    font-size: 14px;
+    height: 46px;
+    width: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #171D2A
+}
+
+.dog-section-text-area {
+    border: 1px solid #D9D9D9;
+    margin-bottom: 28px;
+}
+
+.dog-section-button-send {
+    background-color: #171D2A;
+    height: 62px;
+    border-radius: 18px;
+    width: 98%;
+}
+
+.footer-container {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.follow-icons-group {
+    display: flex;
+}
+
+.follow-icons-group svg{
+    width: 15.17px;
+    height: 15.17px;
+}
+
+.follow-icons-group .circulo-two svg{
+    width: 24px;
+    height: 24px;
+}
+
+.text-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.test {
+    position: relative;
+    top: 180px;
+    left: -200px;
+    width: 439px;
+    font-size: 26px;
+}
+
+.test-children {
+    display: flex;
+    padding-top: 10px;
+}
+
+.test-children-container-two {
+    display: flex;
+    margin-left: -30px;
+    margin-top: 18px;
+    margin-bottom: 57px;
+}
+
+.test-children-container-three {
+    display: flex;
+    margin-left: -20px;
+    margin-top: 11px;
+}
+
+.test-children-one {
+    height: 96px;
+    width: 96px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.test-children-two {
+    margin-left: 22px;
+    font-size: 14px;
+    height: 96;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.test-two {
+    position: relative;
+    top: 180px;
+    left: -200px;
+    width: 439px;
+    font-size: 26px;
+    margin-top: 46px;
 }

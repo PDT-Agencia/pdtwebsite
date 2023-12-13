@@ -5,7 +5,7 @@
         $route = $currentRoute = \Route::currentRouteName();
         
         if ($route == 'home') {
-            $height = 800;
+            $height = 700;
             $background = '180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%';
         } elseif ($route == 'about') {
             $height = 600;

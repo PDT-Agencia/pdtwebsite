@@ -20,7 +20,9 @@
                     <div class="item animation">
                         <div class="item-option margin-left">
                             <img src="{{ asset('image/item.png') }}" width="24" alt="">
-                            <p>{{ __('Content creation and network management') }}</p>
+                            <div class="item-especial">
+                                <p>{{ __('Content creation and network management') }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
