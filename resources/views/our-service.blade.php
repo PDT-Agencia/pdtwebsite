@@ -11,14 +11,15 @@
                     </h3>
 
                     <div class="container-message-hero-text">
-                        <p class="text-white">
-                            Innovar objetivamente productos manufacturados
-                            empoderados mientras que las plataformas parale
-                            las. Predominan de manera holística los procedimi
-                            entos de prueba extensibles para cadenas de sumi
-                            nistro con fiables. Involucre drásticamente los servi
-                            cios web de primera línea frente a los entregables
-                            de vanguardia. afdfdajfgbdig dafhdbhiadsfad sdfas
+                        <p class="text-white text-service" >
+                            En <b>PDT</b>, fusionamos la <b>creatividad con la 
+                            tecnología</b> para llevar tus proyectos al siguiente nivel. Desde el desarrollo de software a medida hasta la creación de 
+                            identidades visuales impactantes, diseño 
+                            de aplicaciones intuitivas, y producciones 
+                            audiovisuales de calidad cinematográfica, 
+                            somos una agencia de medios completa 
+                            que trabaja incansablemente para dar 
+                            vida a tus visiones.
                         </p>
                     </div>
                 </div>
@@ -32,8 +33,8 @@
 
             <div class="container-banner">
                 <div class="banner text-center row mx-5 d-flex justify-content-center align-items-center">
-                    <div class="test-margin-select col-3" onclick="addSVG(event)">
-                        <div class="test-container-svg">
+                    <div class="col-3" onclick="goToService('software-section')">
+                        <div class="container-svg">
                             <svg id="svg-1" xmlns="http://www.w3.org/2000/svg" width="62" height="47" viewBox="0 0 62 47"
                                 fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -42,82 +43,102 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="test-margin col-3" onclick="addSVG(event)">
-                        <svg id="svg-2" xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47"
-                            fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M46.1807 6.78144C46.1903 9.04103 45.7288 11.6563 45.0653 13.1274C44.0462 15.3773 41.8346 16.7042 39.5078 16.7042C38.6809 16.7042 37.8251 16.5312 37.0175 16.1658C35.5367 15.5023 34.4118 14.3005 33.8349 12.7813C33.258 11.2621 33.306 9.60828 33.9791 8.12758C35.2943 5.74668 36.8109 5.32124 38.1459 4.94672L38.1521 4.94498C39.5944 4.55073 40.9597 4.16616 42.6327 1.40663C42.8827 0.993129 43.4019 0.829688 43.8442 1.03163C45.7672 1.89695 46.1807 4.63729 46.1807 6.78144ZM38.5752 21.856C38.8059 22.0964 38.9117 22.4425 38.8155 22.7887C38.0367 25.5771 36.8829 28.6828 35.4887 31.7692C32.1715 39.1344 26.239 46.4899 23.7775 46.4899C23.6333 46.4899 23.4986 46.4707 23.3737 46.413L23.3705 46.4116C22.9922 46.237 21.8377 45.7041 22.7198 39.769C23.066 37.4806 23.989 32.8557 26.3351 27.6443C27.7389 24.5482 29.3062 21.6349 30.8735 19.2022C31.0658 18.9138 31.3927 18.76 31.7196 18.7696C32.21 17.7696 32.7484 16.6831 33.2772 15.6254C34.0561 16.6062 35.056 17.3946 36.2291 17.9138C37.2483 18.3753 38.3829 18.6254 39.5078 18.6254C39.6424 18.6254 39.7771 18.6254 39.9116 18.6157C39.6413 19.2799 39.3602 19.9584 39.0858 20.6205C38.9113 21.0416 38.7396 21.4561 38.5752 21.856ZM31.8255 8.4066C31.3447 10.0604 31.412 11.8199 32.037 13.4642C32.0455 13.4841 32.0532 13.504 32.0608 13.5236C32.0789 13.5705 32.0965 13.6158 32.1236 13.6565C31.6778 14.526 31.221 15.451 30.7826 16.3387C30.6441 16.6192 30.5075 16.8959 30.3736 17.1659C29.9313 17.3871 29.5467 17.7236 29.2583 18.166C27.7679 20.4832 26.2584 23.2235 24.9122 26.1465C23.393 26.2907 22.0277 26.8099 20.9219 27.6849C18.9316 29.2714 17.8932 31.8963 17.999 35.0693C18.0566 36.9058 17.1528 38.5884 15.5663 39.5884C14.6914 40.1364 13.7106 40.4153 12.7395 40.4153C11.9126 40.4153 11.0953 40.2134 10.3357 39.8096C3.98011 36.4923 0.0283203 29.9733 0.0283203 22.8004C0.0283203 17.5986 2.07634 12.7334 5.78776 9.08929C9.49918 5.45475 14.4222 3.51254 19.6143 3.60867C22.9988 3.67598 26.2584 4.66631 29.0948 6.38745C30.0563 6.97396 30.9697 7.6374 31.8255 8.4066ZM7.67234 26.858C7.67234 28.5983 9.07611 30.0118 10.8261 30.0118C12.5664 30.0118 13.9702 28.5983 13.9702 26.858C13.9702 25.1177 12.5664 23.7043 10.8261 23.7043C9.07611 23.7043 7.67234 25.1177 7.67234 26.858ZM9.36461 16.0987C9.36461 17.839 10.7684 19.2525 12.5183 19.2525C14.2587 19.2525 15.6625 17.839 15.6625 16.0987C15.6625 14.3583 14.2587 12.9353 12.5183 12.9353C10.7684 12.9353 9.36461 14.3583 9.36461 16.0987ZM20.4027 14.4064C20.4027 16.1371 21.8066 17.5602 23.5565 17.5602C25.2969 17.5602 26.7006 16.1371 26.7006 14.4064C26.7006 12.6661 25.2969 11.2431 23.5565 11.2431C21.8066 11.2431 20.4027 12.6661 20.4027 14.4064Z"
-                                fill="black" />
-                        </svg>
+                    <div class="test-margin col-3" onclick="goToService('design-section')">
+                        <div class="container-svg">
+                            <svg id="svg-2" xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M46.1807 6.78144C46.1903 9.04103 45.7288 11.6563 45.0653 13.1274C44.0462 15.3773 41.8346 16.7042 39.5078 16.7042C38.6809 16.7042 37.8251 16.5312 37.0175 16.1658C35.5367 15.5023 34.4118 14.3005 33.8349 12.7813C33.258 11.2621 33.306 9.60828 33.9791 8.12758C35.2943 5.74668 36.8109 5.32124 38.1459 4.94672L38.1521 4.94498C39.5944 4.55073 40.9597 4.16616 42.6327 1.40663C42.8827 0.993129 43.4019 0.829688 43.8442 1.03163C45.7672 1.89695 46.1807 4.63729 46.1807 6.78144ZM38.5752 21.856C38.8059 22.0964 38.9117 22.4425 38.8155 22.7887C38.0367 25.5771 36.8829 28.6828 35.4887 31.7692C32.1715 39.1344 26.239 46.4899 23.7775 46.4899C23.6333 46.4899 23.4986 46.4707 23.3737 46.413L23.3705 46.4116C22.9922 46.237 21.8377 45.7041 22.7198 39.769C23.066 37.4806 23.989 32.8557 26.3351 27.6443C27.7389 24.5482 29.3062 21.6349 30.8735 19.2022C31.0658 18.9138 31.3927 18.76 31.7196 18.7696C32.21 17.7696 32.7484 16.6831 33.2772 15.6254C34.0561 16.6062 35.056 17.3946 36.2291 17.9138C37.2483 18.3753 38.3829 18.6254 39.5078 18.6254C39.6424 18.6254 39.7771 18.6254 39.9116 18.6157C39.6413 19.2799 39.3602 19.9584 39.0858 20.6205C38.9113 21.0416 38.7396 21.4561 38.5752 21.856ZM31.8255 8.4066C31.3447 10.0604 31.412 11.8199 32.037 13.4642C32.0455 13.4841 32.0532 13.504 32.0608 13.5236C32.0789 13.5705 32.0965 13.6158 32.1236 13.6565C31.6778 14.526 31.221 15.451 30.7826 16.3387C30.6441 16.6192 30.5075 16.8959 30.3736 17.1659C29.9313 17.3871 29.5467 17.7236 29.2583 18.166C27.7679 20.4832 26.2584 23.2235 24.9122 26.1465C23.393 26.2907 22.0277 26.8099 20.9219 27.6849C18.9316 29.2714 17.8932 31.8963 17.999 35.0693C18.0566 36.9058 17.1528 38.5884 15.5663 39.5884C14.6914 40.1364 13.7106 40.4153 12.7395 40.4153C11.9126 40.4153 11.0953 40.2134 10.3357 39.8096C3.98011 36.4923 0.0283203 29.9733 0.0283203 22.8004C0.0283203 17.5986 2.07634 12.7334 5.78776 9.08929C9.49918 5.45475 14.4222 3.51254 19.6143 3.60867C22.9988 3.67598 26.2584 4.66631 29.0948 6.38745C30.0563 6.97396 30.9697 7.6374 31.8255 8.4066ZM7.67234 26.858C7.67234 28.5983 9.07611 30.0118 10.8261 30.0118C12.5664 30.0118 13.9702 28.5983 13.9702 26.858C13.9702 25.1177 12.5664 23.7043 10.8261 23.7043C9.07611 23.7043 7.67234 25.1177 7.67234 26.858ZM9.36461 16.0987C9.36461 17.839 10.7684 19.2525 12.5183 19.2525C14.2587 19.2525 15.6625 17.839 15.6625 16.0987C15.6625 14.3583 14.2587 12.9353 12.5183 12.9353C10.7684 12.9353 9.36461 14.3583 9.36461 16.0987ZM20.4027 14.4064C20.4027 16.1371 21.8066 17.5602 23.5565 17.5602C25.2969 17.5602 26.7006 16.1371 26.7006 14.4064C26.7006 12.6661 25.2969 11.2431 23.5565 11.2431C21.8066 11.2431 20.4027 12.6661 20.4027 14.4064Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="test-margin col-3" onclick="addSVG(event)">
-                        <svg id="svg-3" xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47"
-                            fill="none">
-                            <path
-                                d="M20.7777 4.58903V17.342C20.7777 18.3084 20.3939 19.2352 19.7105 19.9185C19.0272 20.6019 18.1004 20.9858 17.134 20.9858H4.38102C3.41465 20.9858 2.48785 20.6019 1.80452 19.9185C1.1212 19.2352 0.737305 18.3084 0.737305 17.342V4.58903C0.737305 3.62266 1.1212 2.69586 1.80452 2.01253C2.48785 1.3292 3.41465 0.945313 4.38102 0.945312H17.134C18.1004 0.945313 19.0272 1.3292 19.7105 2.01253C20.3939 2.69586 20.7777 3.62266 20.7777 4.58903ZM42.64 0.945312H29.887C28.9207 0.945313 27.9939 1.3292 27.3105 2.01253C26.6272 2.69586 26.2433 3.62266 26.2433 4.58903V17.342C26.2433 18.3084 26.6272 19.2352 27.3105 19.9185C27.9939 20.6019 28.9207 20.9858 29.887 20.9858H42.64C43.6064 20.9858 44.5332 20.6019 45.2165 19.9185C45.8999 19.2352 46.2838 18.3084 46.2838 17.342V4.58903C46.2838 3.62266 45.8999 2.69586 45.2165 2.01253C44.5332 1.3292 43.6064 0.945313 42.64 0.945312ZM17.134 26.4513H4.38102C3.41465 26.4513 2.48785 26.8352 1.80452 27.5186C1.1212 28.2019 0.737305 29.1287 0.737305 30.095V42.8481C0.737305 43.8144 1.1212 44.7412 1.80452 45.4246C2.48785 46.1079 3.41465 46.4918 4.38102 46.4918H17.134C18.1004 46.4918 19.0272 46.1079 19.7105 45.4246C20.3939 44.7412 20.7777 43.8144 20.7777 42.8481V30.095C20.7777 29.1287 20.3939 28.2019 19.7105 27.5186C19.0272 26.8352 18.1004 26.4513 17.134 26.4513ZM36.2635 26.4513C34.2817 26.4513 32.3444 27.039 30.6966 28.14C29.0488 29.2411 27.7645 30.806 27.0061 32.637C26.2477 34.4679 26.0492 36.4827 26.4359 38.4264C26.8225 40.3701 27.7768 42.1556 29.1782 43.5569C30.5795 44.9583 32.365 45.9126 34.3087 46.2992C36.2524 46.6859 38.2672 46.4874 40.0981 45.729C41.9291 44.9706 43.494 43.6863 44.5951 42.0385C45.6961 40.3907 46.2838 38.4534 46.2838 36.4715C46.2838 33.814 45.2281 31.2653 43.3489 29.3862C41.4698 27.507 38.9211 26.4513 36.2635 26.4513Z"
-                                fill="black" />
-                        </svg>
+                    <div class="test-margin col-3" onclick="goToService('mobile-app-section')">
+                        <div class="container-svg">
+                            <svg id="svg-3" xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47"
+                                fill="none">
+                                <path
+                                    d="M20.7777 4.58903V17.342C20.7777 18.3084 20.3939 19.2352 19.7105 19.9185C19.0272 20.6019 18.1004 20.9858 17.134 20.9858H4.38102C3.41465 20.9858 2.48785 20.6019 1.80452 19.9185C1.1212 19.2352 0.737305 18.3084 0.737305 17.342V4.58903C0.737305 3.62266 1.1212 2.69586 1.80452 2.01253C2.48785 1.3292 3.41465 0.945313 4.38102 0.945312H17.134C18.1004 0.945313 19.0272 1.3292 19.7105 2.01253C20.3939 2.69586 20.7777 3.62266 20.7777 4.58903ZM42.64 0.945312H29.887C28.9207 0.945313 27.9939 1.3292 27.3105 2.01253C26.6272 2.69586 26.2433 3.62266 26.2433 4.58903V17.342C26.2433 18.3084 26.6272 19.2352 27.3105 19.9185C27.9939 20.6019 28.9207 20.9858 29.887 20.9858H42.64C43.6064 20.9858 44.5332 20.6019 45.2165 19.9185C45.8999 19.2352 46.2838 18.3084 46.2838 17.342V4.58903C46.2838 3.62266 45.8999 2.69586 45.2165 2.01253C44.5332 1.3292 43.6064 0.945313 42.64 0.945312ZM17.134 26.4513H4.38102C3.41465 26.4513 2.48785 26.8352 1.80452 27.5186C1.1212 28.2019 0.737305 29.1287 0.737305 30.095V42.8481C0.737305 43.8144 1.1212 44.7412 1.80452 45.4246C2.48785 46.1079 3.41465 46.4918 4.38102 46.4918H17.134C18.1004 46.4918 19.0272 46.1079 19.7105 45.4246C20.3939 44.7412 20.7777 43.8144 20.7777 42.8481V30.095C20.7777 29.1287 20.3939 28.2019 19.7105 27.5186C19.0272 26.8352 18.1004 26.4513 17.134 26.4513ZM36.2635 26.4513C34.2817 26.4513 32.3444 27.039 30.6966 28.14C29.0488 29.2411 27.7645 30.806 27.0061 32.637C26.2477 34.4679 26.0492 36.4827 26.4359 38.4264C26.8225 40.3701 27.7768 42.1556 29.1782 43.5569C30.5795 44.9583 32.365 45.9126 34.3087 46.2992C36.2524 46.6859 38.2672 46.4874 40.0981 45.729C41.9291 44.9706 43.494 43.6863 44.5951 42.0385C45.6961 40.3907 46.2838 38.4534 46.2838 36.4715C46.2838 33.814 45.2281 31.2653 43.3489 29.3862C41.4698 27.507 38.9211 26.4513 36.2635 26.4513Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="test-margin col-3" onclick="addSVG(event)">
-                        <svg id="svg-4" xmlns="http://www.w3.org/2000/svg" width="57" height="47" viewBox="0 0 57 47"
-                            fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M44.2177 8.86644H50.1586C53.9335 8.86644 56.9658 11.8987 56.9658 15.6737V39.6846C56.9658 43.4595 53.9335 46.4918 50.1586 46.4918H6.83993C3.06502 46.4918 0.0327148 43.4595 0.0327148 39.6846V15.6737C0.0327148 11.8987 3.06502 8.86644 6.83993 8.86644H12.7808L16.0606 3.91573C17.2983 2.05922 19.4642 0.945312 21.692 0.945312H35.3065C37.5343 0.945312 39.7002 2.05922 40.9379 3.91573L44.2177 8.86644ZM13.1521 25.5751C13.1521 34.0531 20.0212 40.9222 28.4993 40.9222C36.9773 40.9222 43.8464 34.0531 43.8464 25.6369C43.8464 17.1589 36.9773 10.2898 28.4993 10.2898C20.0212 10.2898 13.1521 17.097 13.1521 25.5751ZM49.0447 18.4584H49.2922C50.4061 18.3965 51.2106 17.4683 51.1487 16.3544C51.0868 15.2405 50.1586 14.3741 49.0447 14.436H46.5693C45.5173 14.4979 44.7128 15.3023 44.6509 16.3544C44.589 17.4683 45.4554 18.3965 46.5693 18.4584H49.0447ZM19.9588 25.6356C19.9588 20.9325 23.7956 17.0957 28.4988 17.0957C33.2019 17.0957 37.0387 20.8706 37.0387 25.5738C37.0387 30.2769 33.2019 34.1137 28.4988 34.1137C23.7956 34.1137 19.9588 30.3388 19.9588 25.6356Z"
-                                fill="black" />
-                        </svg>
+                    <div class="test-margin col-3" onclick="goToService('audio-visual-section')">
+                        <div class="container-svg">
+                            <svg id="svg-4" xmlns="http://www.w3.org/2000/svg" width="57" height="47" viewBox="0 0 57 47"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M44.2177 8.86644H50.1586C53.9335 8.86644 56.9658 11.8987 56.9658 15.6737V39.6846C56.9658 43.4595 53.9335 46.4918 50.1586 46.4918H6.83993C3.06502 46.4918 0.0327148 43.4595 0.0327148 39.6846V15.6737C0.0327148 11.8987 3.06502 8.86644 6.83993 8.86644H12.7808L16.0606 3.91573C17.2983 2.05922 19.4642 0.945312 21.692 0.945312H35.3065C37.5343 0.945312 39.7002 2.05922 40.9379 3.91573L44.2177 8.86644ZM13.1521 25.5751C13.1521 34.0531 20.0212 40.9222 28.4993 40.9222C36.9773 40.9222 43.8464 34.0531 43.8464 25.6369C43.8464 17.1589 36.9773 10.2898 28.4993 10.2898C20.0212 10.2898 13.1521 17.097 13.1521 25.5751ZM49.0447 18.4584H49.2922C50.4061 18.3965 51.2106 17.4683 51.1487 16.3544C51.0868 15.2405 50.1586 14.3741 49.0447 14.436H46.5693C45.5173 14.4979 44.7128 15.3023 44.6509 16.3544C44.589 17.4683 45.4554 18.3965 46.5693 18.4584H49.0447ZM19.9588 25.6356C19.9588 20.9325 23.7956 17.0957 28.4988 17.0957C33.2019 17.0957 37.0387 20.8706 37.0387 25.5738C37.0387 30.2769 33.2019 34.1137 28.4988 34.1137C23.7956 34.1137 19.9588 30.3388 19.9588 25.6356Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="service-image">
 
-                <img src="{{ asset('image/Rectangle 80.png') }}" alt="">
+            <div class="service-image active" id="software-section">
+                <img src="{{ asset('image/service_software_developer.png') }}" alt="">
+            </div>
+
+            <div class="service-image" id="design-section">
+                <img src="{{ asset('image/service_desing.png') }}" alt="">
+            </div>
+
+            <div class="service-image" id="mobile-app-section">
+                <img src="{{ asset('image/service_develop_mobile_app.png') }}" alt="">
+            </div>
+
+            <div class="service-image" id="audio-visual-section">
+                <img src="{{ asset('image/service_production_audio_visual.png') }}" alt="">
             </div>
 
 
-            <div class="row text-white serv container-services">
-                <div class="col-4">
-                    <h3>Nuestros Servicios</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </p>
-                </div>
-                <div class="col-4">
-                    <h3>Nuestros Servicios</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </p>
-                </div>
-                <div class="col-4">
-                    <h3>Nuestros Servicios</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </p>
-                </div>
 
-                <div class="container-service-separator"></div>
+            <div id='content-services'>
+                <div class="row text-white serv container-services">
+                    <div class="col-4">
+                        <h3>Nuestros Servicios</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h3>Nuestros Servicios</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h3>Nuestros Servicios</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
 
-                <div class="col-4">
-                    <h3>Nuestros Servicios</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </p>
+                    <div class="container-service-separator"></div>
+
+                    <div class="col-4">
+                        <h3>Nuestros Servicios</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h3>Nuestros Servicios</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+
+
+                    <div class="col-4">
+                        <h3>Nuestros Servicios</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <h3>Nuestros Servicios</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </p>
-                </div>
-
-
-                <div class="col-4">
-                    <h3>Nuestros Servicios</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </p>
-                </div>
-
             </div>
 
             <div class="container-own-services">
@@ -163,75 +184,30 @@
             transform: translate(-50%, -50%);
         }
     </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <script>
-    // Variable para almacenar el contenedor seleccionado actualmente
-    let selectedContainer = null;
+        function goToService(sectionId) {
 
-    // Función para agregar el SVG al contenedor clicado
-    function addSVG(event) {
-        // Crear un nuevo elemento SVG
-        const svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        svgElement.setAttribute("width", "216");
-        svgElement.setAttribute("height", "131");
-        svgElement.setAttribute("viewBox", "0 0 216 131");
 
-        // Crear el grupo y los elementos del SVG
-        const groupElement = document.createElementNS("http://www.w3.org/2000/svg", "g");
-        const pathElement = document.createElementNS("http://www.w3.org/2000/svg", "path");
-        pathElement.setAttribute("d", "M215.708 23.3947C172.232 23.3947 191.279 130.843 108.26 130.843C25.2415 130.843 43.253 23.3947 0.812012 23.3947C0.812012 15.3202 108.26 0 108.26 0C108.26 0 215.708 11.8009 215.708 23.3947Z");
-        pathElement.setAttribute("fill", "black");
+            var serviceSections = document.querySelectorAll('.service-image');
+            serviceSections.forEach(function(section) {
+                console.log(section)
+                section.classList.remove('active');
+            });
 
-        const ellipseElement = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
-        ellipseElement.setAttribute("cx", "108.054");
-        ellipseElement.setAttribute("cy", "58.3828");
-        ellipseElement.setAttribute("rx", "52.5855");
-        ellipseElement.setAttribute("ry", "52.5855");
-        ellipseElement.setAttribute("fill", "white");
+            var selectedSection = document.getElementById(sectionId);
+            console.log({selectedSection})
+            selectedSection.classList.add('active');
 
-        // Agregar los elementos SVG al grupo
-        groupElement.appendChild(pathElement);
-        groupElement.appendChild(ellipseElement);
+            var targetPosition = $('#content-services').offset().top;
 
-        // Agregar el grupo al SVG
-        svgElement.appendChild(groupElement);
-
-        // Obtener el contenedor clicado
-        const container = event.currentTarget;
-
-        // Si ya hay un contenedor seleccionado, quitar la clase 'test-margin-select' y limpiar el contenido
-        if (selectedContainer) {
-            selectedContainer.classList.remove('test-margin-select');
-            selectedContainer.style.transform = 'translateX(0)';
-            selectedContainer.innerHTML = '';
+            $('html, body').animate({
+                scrollTop: targetPosition
+            }, 1000); 
         }
-
-        // Agregar el SVG al contenedor clicado
-        container.appendChild(svgElement);
-
-        // Agregar la clase 'test-margin-select' al contenedor clicado
-        container.classList.add('test-margin-select');
-
-        // Calcular la dirección del desplazamiento
-        const direction = event.clientX > container.getBoundingClientRect().left ? 'right' : 'left';
-
-        // Aplicar el desplazamiento con una transición suave
-        container.style.transform = `translateX(${direction === 'right' ? '0px' : '0px'})`;
-
-        // Establecer el contenedor actual como seleccionado
-        selectedContainer = container;
-
-        // Reiniciar el desplazamiento después de que se complete la transición
-        setTimeout(() => {
-            container.style.transform = 'translateX(0)';
-        }, 300);
-    }
-
-    // Establecer la primera opción como seleccionada por defecto al cargar la página
-    window.onload = function () {
-        const defaultContainer = document.querySelector(".col-3");
-        addSVG({ currentTarget: defaultContainer });
-    };
-</script>
+    </script>
 
 
 </x-app-layout>
