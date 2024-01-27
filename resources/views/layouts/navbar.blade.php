@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light container pt-4">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ route('home') }}">
-            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="38" viewBox="0 0 96 38" fill="none">
+            <svg id="logoLink" xmlns="http://www.w3.org/2000/svg" width="96" height="38" viewBox="0 0 96 38" fill="none">
                 <path
                     d="M39.6763 22.0728C38.0719 26.8796 34.3995 30.2069 31.9465 28.4814V31.631C33.4119 31.4855 35.0845 30.9408 36.5151 29.5012C37.043 28.8239 37.5903 28.0707 38.1041 27.2788C38.1041 27.2762 38.1066 27.2749 38.1066 27.2723C39.1393 25.6769 40.0291 23.9219 40.3175 22.3007C41.2202 19.2477 40.472 16.3273 40.472 16.3273C40.5609 19.0662 40.0754 21.0221 39.7085 22.0857C39.6969 22.0805 39.6866 22.0767 39.675 22.0715L39.6763 22.0728Z"
                     fill="white" />
@@ -18,6 +18,8 @@
                     d="M75.8514 7.00862H66.3537C61.6319 7.00862 61.6319 0.0617676 66.3537 0.0617676H92.0255C96.8555 0.0617676 96.8555 7.00862 92.0255 7.00862H83.0159V34.4175C83.0159 39.1393 75.8514 39.2487 75.8514 34.4175V7.00862Z"
                     fill="white" />
             </svg>
+
+            <img id='logo' src="{{asset('image/logo-color.png')}}" alt="">
         </a>
         <button class="navbar-toggler tex-white" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -33,7 +35,7 @@
                     <a href="{{ route('service') }}">{{ __('Our Services') }}</a>
                 </li>
                 <li class="btn mx-1 text-white  my-2 my-sm-0">
-                    <a href="#">{{ __('Portfolio') }}</a>
+                    <a href="{{ route('portfolio') }}">{{ __('Portfolio') }}</a>
                 </li>
                 <li class="btn mx-1 text-white  my-2 my-sm-0">
                     <a href="{{ route('about') }}">{{ __('About Us') }}</a>

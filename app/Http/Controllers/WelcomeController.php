@@ -33,4 +33,15 @@ class WelcomeController extends Controller
         app()->setLocale($locale);
         return view("our-service");
     }
+
+
+    public function portfolio(){
+
+        $locale = Cache::get('locale');
+        app()->setLocale($locale);
+        return view("our-portfolio");
+    }
+
+
+    
 }

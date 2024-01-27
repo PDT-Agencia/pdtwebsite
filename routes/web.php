@@ -23,3 +23,6 @@ Route::get('/team',[WelcomeController::class,"team"])->name("team");
 Route::get('/service',[WelcomeController::class,"service"])->name("service");
 
 Route::get('/cambiar-locale/{locale}', [LocaleController::class,'cambiarLocale'])->name('cambiar-locale');
+
+Route::get('/portafolio',[WelcomeController::class,"portfolio"])->name("portfolio");
+
