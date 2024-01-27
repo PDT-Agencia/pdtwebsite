@@ -1,4 +1,4 @@
-<div>
+<div class="our-client-section">
     <h2 class="client  container text-center ">
                 {{ __('OUR CLIENTS') }}
     </h2>

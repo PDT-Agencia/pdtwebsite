@@ -1,13 +1,8 @@
-<div class="container">
+<div class="container footer-container">
     <div class="row container">
         <div class="col-lg-5 col-10 mt-4">
             <h5 class="footer-font ">{{ __('We are pdt') }}</h5>
-            <p class="footer-p">Innovar objetivamente productos manufacturados
-                empoderados mientras que las plataformas paralelas.
-                Predominan de manera holística los procedimientos
-                de prueba extensibles para cadenas de suministro
-                confiables. Involucre drásticamente los servicios web
-                de primera línea frente a los entregables de vanguardia.</p>
+            <p class="footer-p">En PDT, no solo creamos soluciones; damos vida a visiones. Somos más que una agencia de medios: somos arquitectos digitales, artistas de la narrativa y expertos en integración tecnológica.</p>
 
         </div>
         <div class="col-2 mt-4">
@@ -22,7 +17,7 @@
                 Medellín, El Poblado, Medellín, Antioquia <br> <br>
                 pdtcomunicaciones@gmail.com</p> <br>
             <p class="footer-font"> {{ __('Follow us on:') }}</p>
-            <div class="row">
+            <div class="follow-icons-group">
                 <div class="col-2 mx-2 circulo">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                         fill="none">
@@ -68,16 +63,13 @@
         </div>
         <div class="col-1 text-end mt-4">
             <div class="circulo-end">
-
+                <img src="{{ asset('image/question.png') }}" class="" alt="...">
             </div>
             <br>
             <div class="circulo-end">
-
+                <img src="{{ asset('image/folder.png') }}" class="" alt="...">
             </div>
-            <br>
-            <div class="circulo-end">
-
-            </div>
+            
         </div>
     </div>
     <style>
