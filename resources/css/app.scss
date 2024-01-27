@@ -754,4 +754,32 @@ body {
         text-align: left;
     }
 }
+.container-services{
+    display: none;
 
+    &.active{
+        display: inline-flex;
+        width: 100%;
+    }
+}
+
+
+
+#abouts{
+    
+    p{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: lighter;
+        line-height: normal;
+        color: white;
+    }
+
+    h3{
+        color: white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+}

@@ -41,18 +41,12 @@
     @if (isset($image))
         <style>
             .background-container {
-
                 background: linear-gradient({{ $background }}), url('{{ asset('image/' . $image) }}');
                 background-size: cover;
                 background-repeat: no-repeat;
-
-                /* Opcional: para centrar la imagen */
                 height: 100vh;
                 flex-shrink: 0;
                 overflow: hidden;
-
-
-
             }
         </style>
     @endif
@@ -60,7 +54,6 @@
 
 
     <div class="background-container bg-black">
-
 
         @include('layouts.navbar')
 

@@ -1,28 +1,28 @@
 <x-app-layout>
-    <div class="bg-black">
-
-        <div class="container">
-            <div class="row container overlay-p">
-                <div class="col-7 ">
-
+    <div class="bg-black" id="abouts">
+        <div id='container-about'>
+            <div class="row">
+                <div class="col-7">
                 </div>
-                <div class=" col-5">
+                <div class="col-5">
                     <p>
-                        Innovar objetivamente productos manufacturados empoderados mien
-                        tras que las plataformas paralelas. Predominan de manera holística los
-                        procedimientos de prueba extensibles para cadenas de suministro con
-                        fiables. Involucre drásticamente los servicios web de primera línea fren
-                        te a los entregables de vanguardia. afdfdajfgbdig dafhdbhiadsfad sdfa
-                        sadgasdgjnafong jdsangfodasg oiajgfdgñsdnjfboigd jdnasgosndoas ds
-                        asgnbfiogsa idojisagnidadjdfao sodanfgsabgñippiubfdbxa jdfsdoansdd
-                        aovnoudasugdoaisknfodsodsfa.
-
-
+                        En PDT, no solo creamos soluciones; damos vida a visiones. Somos más que una agencia de medios: somos arquitectos digitales, artistas de la narrativa y expertos en integración tecnológica. 
                     </p>
+                    <br>
+                    <h3>¿NUESTRO SECRETO?</h3>
+                    <p>
+                        Un equipo apasionado de diseñadores y programadores que transforman ideas en experiencias cautivadoras.
+                    </p>
+
+                    <br>
+                    <h3>NUESTRA ESENCIA</h3>
+                    <p>
+                        En el corazón de PDT late la fusión perfecta entre creatividad y tecnología. Somos contadores de historias digitales, construyendo narrativas que resuenan y experiencias que impactan. Cada proyecto es una oportunidad para desafiar los límites, trascender las expectativas y convertir ideas en realidad.
+                    </p>
+
                 </div>
             </div>
-
-        </div> <br> <br> <br> <br> <br>
+        </div> 
         <div class=" container">
             <div class="row">
                 <div class="col-12 col-lg-5 text-white">
@@ -38,7 +38,7 @@
                         <div class="an">
                             @include('animation.dog')
                         </div>
-                    </div> <br><br><br><br><br><br><br>
+                    </div> 
 
 
 
@@ -54,7 +54,6 @@
                 width: 786px;
                 height: 482px;
                 position: relative;
-                /* Agrega posición relativa al contenedor principal */
             }
 
             .an {
