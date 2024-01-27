@@ -44,7 +44,7 @@
                     <a href="#">Blog</a>
                 </li>
                 <li class="button-cont hover:text-white my-2 btn fill mx-1 my-sm-0 nav-contact">
-                    <a href="#">{{ __('Contact') }}</a>
+                 <a href="{{ route('contact') }}">{{ __('Contact') }}</a>
                 </li>
                 <li class="my-2 my-sm-0">
 
