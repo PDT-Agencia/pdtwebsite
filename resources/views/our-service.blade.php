@@ -79,18 +79,22 @@
 
             <div class="service-image active" id="software-section">
                 <img src="{{ asset('image/service_software_developer.png') }}" alt="">
+                <p class='title-service'>Desarrollo de software</p>
             </div>
 
             <div class="service-image" id="design-section">
                 <img src="{{ asset('image/service_desing.png') }}" alt="">
+                <p class='title-service'>Diseño gráfico</p>
             </div>
 
             <div class="service-image" id="mobile-app-section">
                 <img src="{{ asset('image/service_develop_mobile_app.png') }}" alt="">
+                <p class='title-service'>Desarrollo de aplicaciones</p>
             </div>
 
             <div class="service-image" id="audio-visual-section">
                 <img src="{{ asset('image/service_production_audio_visual.png') }}" alt="">
+                <p class='title-service'>Producción audiovisual</p>
             </div>
 
 

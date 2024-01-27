@@ -725,4 +725,15 @@ body {
     &.active{
         display: block;
     }
+
+    .title-service{
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: white;
+        margin-top: -83px;
+        position: absolute;
+        margin-left: 38px;
+    }
 }
