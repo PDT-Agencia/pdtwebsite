@@ -64,7 +64,8 @@
 
         @include('layouts.navbar')
 
-       <div class="hero-note-footer">
+        @if($route == 'home')
+        <div class="hero-note-footer">
             <div class="hero-note-regtangle"></div>
             <div>
                 <div class="hero-note-flex">
@@ -75,29 +76,32 @@
                     <p class="hero-note-footer-text">Consolidamos <span class="hero-note-footer-text-bold">sueños</span></p>
                 </div>
             </div>
-       </div>
+        </div>
 
         <div class="hero-note-footer-container-icons">
             <div><img src="{{ asset('image/play.png') }}" class="hero-note-footer-container-icons-image" alt="..."></div>
             <div><img src="{{ asset('image/play.png') }}" class="hero-note-footer-container-icons-image" alt="..."></div>
         </div>
+        @endif
 
     </div>
 
-    <div class="hero-note-footer-location">
-        <div class="hero-note-footer-container">
-            <div class="hero-note-footer-location-pagination-select"></div>
-            <div class="hero-note-footer-location-pagination"></div>
-            <div class="hero-note-footer-location-pagination"></div>
-            <div class="hero-note-footer-location-pagination"></div>
+    @if($route == 'home')
+        <div class="hero-note-footer-location">
+            <div class="hero-note-footer-container">
+                <div class="hero-note-footer-location-pagination-select"></div>
+                <div class="hero-note-footer-location-pagination"></div>
+                <div class="hero-note-footer-location-pagination"></div>
+                <div class="hero-note-footer-location-pagination"></div>
+            </div>
         </div>
-    </div>
+    @endif
 
 
     <main class="main-container">
         {{ $slot }}
     </main>
-    <div class="bg-black">
+    <div class="bg-black container-footer">
         @include('layouts.footer')
     </div>
 

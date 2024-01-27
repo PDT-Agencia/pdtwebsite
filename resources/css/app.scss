@@ -1,4 +1,6 @@
 @import 'bootstrap/scss/bootstrap';
+@import './services.scss';
+@import './footer.scss';
 
 //service start
 .service {
@@ -60,7 +62,6 @@ body {
 }
 
 .main-container {
-    padding-bottom: 130px;
 }
 
 .navbar a {
@@ -550,6 +551,7 @@ body {
     padding-top: 100px;
     width: 95%;
     margin: auto;
+    padding-bottom: 150px;
 }
 
 // dog section
