@@ -117,6 +117,11 @@
 
         <style>
 
+            @media (max-width: 767px){
+                .background-container{
+                    height: 300px
+                }
+            }
             body{ 
                 background: #000
             }

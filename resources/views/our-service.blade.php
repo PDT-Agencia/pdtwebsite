@@ -123,7 +123,7 @@
             flex-shrink: 0;
             border-radius: 40px;
             background: var(--Blanco-PDT, #FFF);
-            width: 860px;
+            width: 100%;
         }
 
         .service-image {

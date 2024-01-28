@@ -31,18 +31,21 @@
 
             </ul>
             <ul class="nav-ul-flex navbar-nav mb-2 mb-lg-0">
-                <li class="btn mx-1 text-white  my-2 my-sm-0">
-                    <a href="{{ route('service') }}">{{ __('Our Services') }}</a>
-                </li>
-                <li class="btn mx-1 text-white  my-2 my-sm-0">
-                    <a href="{{ route('portfolio') }}">{{ __('Portfolio') }}</a>
-                </li>
+
                 <li class="btn mx-1 text-white  my-2 my-sm-0">
                     <a href="{{ route('about') }}">{{ __('About Us') }}</a>
                 </li>
+
                 <li class="btn mx-1 text-white  my-2 my-sm-0">
-                    <a href="#">Blog</a>
+                    <a href="{{ route('service') }}">{{ __('Our Services') }}</a>
                 </li>
+
+                
+
+                <li class="btn mx-1 text-white  my-2 my-sm-0">
+                    <a href="{{ route('portfolio') }}">{{ __('Portfolio') }}</a>
+                </li>
+               
                 <li class="button-cont hover:text-white my-2 btn fill mx-1 my-sm-0 nav-contact">
                  <a href="{{ route('contact') }}">{{ __('Contact') }}</a>
                 </li>

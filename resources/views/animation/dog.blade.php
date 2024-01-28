@@ -11,9 +11,12 @@
             $height = 600;
             
         }
+        elseif ($route == 'contact') {
+            $height = 600;
+        }
         
     @endphp
-    <svg xmlns="http://www.w3.org/2000/svg" height="{{$height}}" viewBox="0 -20 446.4 686.5">
+    <svg xmlns="http://www.w3.org/2000/svg" height="320">
         <title>Curious Bear</title>
         <g id="bear">
 

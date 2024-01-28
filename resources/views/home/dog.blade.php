@@ -1,18 +1,21 @@
 <div id='contact-content'>
     <div class="row">
-        <div class="row col-12 col-lg-5 ">
-            <div class=" col-5">
-                @include('animation.dog')
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-5">
+                    @include('animation.dog')
+                </div>
+                <div class="mt-3 col-md-7">
+                    <div>
+                        <h3 class="idea">{{ __('¿YOU HAVE A GREAT IDEA?') }}</h3>
+
+                        <p class="idea_parraf text-black">{{ __('Tell us about her') }}</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="mt-3 col-7">
-                <div>
-                    <h3 class="idea">{{ __('¿YOU HAVE A GREAT IDEA?') }}</h3>
-
-                    <p class="idea_parraf text-black">{{ __('Tell us about her') }}</p>
-                </div>
-
-                <div class="test">
+            <div class="row">
+                <div class="col-md-12">
                     <h3>Los clientes confian en nosotros</h3>
 
                     <div class="test-children">
@@ -25,10 +28,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="test-two">
+            <br>
+            <div class="row">
+                <div class="col-md-12">
                     <h3>Síguenos en:</h3>
-
                     <div class="test-children-container-two">
                         <div class="test-children-two">
                             <div class="mb-2">
@@ -79,8 +84,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="test">
+            <br>
+            <div class="row">
+                <div class="col-md-12">
                     <h3>Contáctanos</h3>
 
                     <div class="test-children-container-three">
@@ -90,73 +98,70 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
-        <div class="dog-content-two col-12 col-lg-7 border-start">
-            <div class="row ">
-                <div class="col-6">
-                    <label class="mb-2">
-                    {{__("Name and Company")}}</label> 
-                    <input type="text" class="form-control">
-                </div>
-                <div class="col-6"><label class="mb-2" for=""> {{__("Your email")}}</label>
-                   
-                    <input type="text" class="form-control">
-                </div> <br> <br>
-                <label class="mt-5 mb-3">{{__("I am interested in...")}}</label> <br> <br>
-
+        <div class="col-md-6">
+            <div class="dog-content-two col-md-12 border-start">
                 <div class="row ">
-                    <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
-                        <p class="service text-center p-3 mx-1  ">{{__("Web development")}}</p>
+                    <div class="col-6">
+                        <label class="mb-2">
+                        {{__("Name and Company")}}</label> 
+                        <input type="text" class="form-control">
                     </div>
-                    <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
-                        <p class="service text-center p-3 mx-1 ">{{__("App development")}}</p>
-                    </div>
-                    <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
-                        <p class="service text-center p-3 mx-1 ">{{__("UI/UX Design")}}</p>
-                    </div>
-                    <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
-                        <p class="service text-center p-3 mx-1 ">{{__("Brand design")}}</p>
-                    </div>
-                    <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
-                        <p class="service text-center p-3 mx-1 ">{{__("Web maintenance")}}</p>
-                    </div>
-                    <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
-                        <p class="service text-center p-3 mx-1 ">{{__("App maintenance")}}</p>
-                    </div>
-                    <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
-                        <p class="service text-center p-3 mx-1 ">{{__("Maintenance")}}</p>
-                    </div>
-                    <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
-                        <p class="service text-center p-3 mx-1 ">{{__("Graphic design")}}</p>
-                    </div>
-                    <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
-                        <p class="service text-center p-3 mx-1 ">{{__("Audiovisual production")}}</p>
-                    </div>
-                    <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
-                        <p class="service text-center p-3 mx-1 ">{{__("Network management")}}</p>
+                    <div class="col-6"><label class="mb-2" for=""> {{__("Your email")}}</label>
+                    
+                        <input type="text" class="form-control">
+                    </div> <br> <br>
+                    <label class="mt-5 mb-3">{{__("I am interested in...")}}</label> <br> <br>
+
+                    <div class="row ">
+                        <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
+                            <p class="service text-center p-3 mx-1  ">{{__("Web development")}}</p>
+                        </div>
+                        <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
+                            <p class="service text-center p-3 mx-1 ">{{__("App development")}}</p>
+                        </div>
+                        <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
+                            <p class="service text-center p-3 mx-1 ">{{__("UI/UX Design")}}</p>
+                        </div>
+                        <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
+                            <p class="service text-center p-3 mx-1 ">{{__("Brand design")}}</p>
+                        </div>
+                        <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
+                            <p class="service text-center p-3 mx-1 ">{{__("Web maintenance")}}</p>
+                        </div>
+                        <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
+                            <p class="service text-center p-3 mx-1 ">{{__("App maintenance")}}</p>
+                        </div>
+                        <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
+                            <p class="service text-center p-3 mx-1 ">{{__("Maintenance")}}</p>
+                        </div>
+                        <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
+                            <p class="service text-center p-3 mx-1 ">{{__("Graphic design")}}</p>
+                        </div>
+                        <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
+                            <p class="service text-center p-3 mx-1 ">{{__("Audiovisual production")}}</p>
+                        </div>
+                        <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
+                            <p class="service text-center p-3 mx-1 ">{{__("Network management")}}</p>
+
+                        </div>
+                        <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
+                            <p class="service text-center p-3 mx-1 ">{{__("Others")}}</p>
+
+                        </div>
+
 
                     </div>
-                    <div class="button-services-dog-section col-xl-3 col-6 col-md-4">
-                        <p class="service text-center p-3 mx-1 ">{{__("Others")}}</p>
-
+                </div>
+                <div class="my-5">
+                    <label class="mb-2">{{__("Tell us more about your project.")}}</label>
+                    <textarea name="" class="rounded dog-section-text-area" id="" cols="76" rows="3"></textarea>
+                    <div class="d-grid gap-2">
+                        <button class="dog-section-button-send btn btn-dark" type="button">Enviar</button>
+                    
                     </div>
-
-
                 </div>
             </div>
-            <div class="my-5">
-                <label class="mb-2">{{__("Tell us more about your project.")}}</label>
-                <textarea name="" class="rounded dog-section-text-area" id="" cols="76" rows="3"></textarea>
-                <div class="d-grid gap-2">
-                    <button class="dog-section-button-send btn btn-dark" type="button">Enviar</button>
-                   
-                  </div>
-            </div>
         </div>
-
-
     </div>
-    
 </div>

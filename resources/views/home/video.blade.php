@@ -11,7 +11,7 @@
         </div>
         <div class="col-12 col-md-7"
         >
-            <div><img src="{{ asset('image/aiop.png') }}" class="hero-note-footer-container-icons-image" alt="..."></div>
+            <div><img src="{{ asset('image/aiop.png') }}" class="hero-note-footer-container-icons-image w-100" alt="..."></div>
         </div>
         
 

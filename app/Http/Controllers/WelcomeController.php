@@ -43,5 +43,15 @@ class WelcomeController extends Controller
     }
 
 
+    public function contact(){
+
+        $locale = Cache::get('locale');
+        app()->setLocale($locale);
+        return view("contact");
+    }
+
+
+
+
     
 }

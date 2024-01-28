@@ -27,6 +27,6 @@ Route::get('/cambiar-locale/{locale}', [LocaleController::class,'cambiarLocale']
 Route::get('/portafolio',[WelcomeController::class,"portfolio"])->name("portfolio");
 
 
-Route::get('/contact',[WelcomeController::class,"portfolio"])->name("contact");
+Route::get('/contact',[WelcomeController::class,"contact"])->name("contact");
 
 
