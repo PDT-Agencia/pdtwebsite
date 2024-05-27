@@ -1,0 +1,160 @@
+{
+  "Index": {
+    "title": "Hola mundo"
+  },
+
+  "Header": {
+    "home": "Inicio",
+    "services": "Nuestros Servicios",
+    "portfolio": "Portafolio",
+    "about": "Acerca de",
+    "blog": "Blog",
+    "contact": "Contáctanos"
+  },
+  "Home": {
+    "section1": {
+      "title": "Creamos",
+      "titleBold": "Experiencias",
+      "subtitle": "Consolidamos",
+      "subtitleBold": "sueños"
+    },
+    "section2": {
+      "cards": [
+        {
+          "title": "Desarrollo de ",
+          "description": "Software"
+        },
+        {
+          "title": "Diseño",
+          "description": "gráfico"
+        },
+        {
+          "title": "Diseño de",
+          "description": "Aplicaciones"
+        },
+        {
+          "title": "Producción",
+          "description": "Audiovisual"
+        }
+      ]
+    },
+    "section3": {
+      "stats": [
+        "Más de 300 sitios web",
+        "Más de 30 aplicaciones",
+        "Creación de contenido",
+        "y manejo de redes"
+      ],
+      "stats2": [
+        "Realización de contenido",
+        "Audiovisual",
+        "Más de 300 piezas creadas",
+        "Más de 8 años de experiencia"
+      ]
+    },
+    "section4": {
+      "title": "Nuestros clientes"
+    },
+    "section5": {
+      "title": "Hacemos realidad",
+      "sub": "tus ideas",
+      "description": "Somos desarrolladores del primer GDS para agencias de viajes con el enfoque de turismo en salud.",
+      "description2": "Dando soluciones tecnologicas para agilizar procesos y en un solo lugar poder encontrar, todos los servicios de salud y bienestar para que las agencias de viaje puedan entrar en una nueva era del turismo, con más alcance, muchos más servicios y claro, aumentando sus ganancias."
+    },
+    "section6": {
+      "title": "¿TIENES UNA GRAN IDEA?",
+      "description": "Cuentanos sobre ella",
+      "clients": "Los clientes confian en nosotros",
+      "rating": "Clasificación 5,24 en opinión",
+      "follow": "Síguenos en:",
+      "contact": "Contáctanos"
+    },
+    "form": {
+      "sections": [
+        {
+          "fields": [
+            {
+              "label": "Nombre y Compañia"
+            },
+            {
+              "label": "Tu Email"
+            }
+          ]
+        },
+        {
+          "header": "Estoy interesado en...",
+          "options": [
+            "Desarrollo Web",
+            "Creación de App",
+            "Diseño UI/UX",
+            "Diseño de marca",
+            "Creación de Web",
+            "Desarrollo de App",
+            "Mantenimiento",
+            "Diseño gráfico",
+            "Producción Audiovisual",
+            "Manejo de redes",
+            "Otros"
+          ]
+        },
+        {
+          "header": "Cuéntanos más sobre tu proyecto"
+        },
+        {
+          "button": "Enviar"
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "content": [
+      {
+        "paragraph": {
+          "title": "Somos PDT.",
+          "description": "Innovamos productos manufacturados empoderados de manera objetiva mientras predominan plataformas paralelas. Reinventamos de manera holística procedimientos de prueba extensibles para cadenas de suministro confiables. Nos comprometemos drásticamente con servicios web de primera línea frente a entregables de vanguardia."
+        }
+      },
+      {
+        "list": {
+            "title": "Acceso",
+          "items": [
+            {
+              "text": "Nuestros Servicios",
+              "href": "/services"
+            },
+            {
+              "text": "Portafolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "Acerca de",
+              "href": "/about"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            }
+          ]
+        }
+      },
+      {
+        "list": {
+            "title": "Contáctanos",
+          "items": [
+            {
+              "text": "Av. El Poblado #5A-113, El Poblado, Medellín, El Poblado, Medellín, Antioquia",
+              "href": "/"
+            },
+            {
+              "text": "pdtcomunicaciones@gmail.com",
+              "href": "/"
+            }
+          ]
+        }
+      },
+      {
+        "follow": "Síguenos en:"
+      }
+    ]
+  }
+}
