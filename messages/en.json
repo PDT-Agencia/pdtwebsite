@@ -1,0 +1,159 @@
+{
+  "Index": {
+    "title": "Hello world"
+  },
+  "Header": {
+    "home": "Home",
+    "services": "Our Services",
+    "portfolio": "Portfolio",
+    "about": "About Us",
+    "blog": "Blog",
+    "contact": "Contact Us"
+  },
+  "Home": {
+    "section1": {
+      "title": "We Create",
+      "titleBold": "Experiences",
+      "subtitle": "We Consolidate",
+      "subtitleBold": "Dreams"
+    },
+    "section2": {
+      "cards": [
+        {
+          "title": "Development",
+          "description": "Software"
+        },
+        {
+          "title": "Design",
+          "description": "Graphic"
+        },
+        {
+          "title": "Design",
+          "description": "Applications"
+        },
+        {
+          "title": "Production",
+          "description": "Audiovisual"
+        }
+      ]
+    },
+    "section3": {
+      "stats": [
+        "Over 300 websites",
+        "Over 30 applications",
+        "Content creation",
+        "and social media management"
+      ],
+      "stats2": [
+        "Content development",
+        "Audiovisual",
+        "More than 300 pieces created",
+        "More than 8 years of experience"
+      ]
+    },
+    "section4": {
+      "title": "Our Clients"
+    },
+    "section5": {
+      "title": "We Make Your Ideas Come True",
+      "sub": "your ideas",
+      "description": "We are developers of the first GDS for travel agencies with a focus on health tourism.",
+      "description2": "Providing technological solutions to streamline processes and in one place be able to find all health and wellness services so that travel agencies can enter a new era of tourism, with greater reach, many more services, and of course, increasing their profits."
+    },
+    "section6": {
+      "title": "¿DO YOU HAVE A GREAT IDEA?",
+      "description": "Tell us about it",
+      "clients": "Clients Trust Us",
+      "rating": "Rating 5.24 in opinion",
+      "follow": "Follow Us",
+      "contact": "Contact Us"
+    },
+    "form": {
+      "sections": [
+        {
+          "fields": [
+            {
+              "label": "Name and Company"
+            },
+            {
+              "label": "Your Email"
+            }
+          ]
+        },
+        {
+          "header": "I'm interested in...",
+          "options": [
+            "Web Development",
+            "App Development",
+            "UI/UX Design",
+            "Brand Design",
+            "Web Creation",
+            "App Development",
+            "Maintenance",
+            "Graphic Design",
+            "Audiovisual Production",
+            "Social Media Management",
+            "Others"
+          ]
+        },
+        {
+          "header": "Tell us more about your project"
+        },
+        {
+          "button": "Submit"
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "content": [
+      {
+        "paragraph": {
+          "title": "We PDT.",
+          "description": "We innovate objectively empowered manufactured products while parallel platforms predominate. We holistically reinvent extensible test procedures for reliable supply chains. We dramatically commit to world-class web services versus cutting-edge deliverables."
+        }
+      },
+      {
+        "list": {
+            "title": "Access",
+          "items": [
+            {
+              "text": "Our Services",
+              "href": "/services"
+            },
+            {
+              "text": "Portfolio",
+              "href": "/portfolio"
+            },
+            {
+              "text": "About",
+              "href": "/about"
+            },
+            {
+              "text": "Blog",
+              "href": "/blog"
+            }
+          ]
+        }
+      },
+      {
+        "list": {
+            "title": "Contact",
+          "items": [
+            {
+              "text": "Av. El Poblado #5A-113, El Poblado, Medellín, El Poblado, Medellín, Antioquia",
+              "href": "/"
+            },
+            {
+              "text": "pdtcomunicaciones@gmail.com",
+              "href": "/"
+            }
+          ]
+        }
+      },
+      {
+        "follow": "Follow us on:"
+      }
+    ]
+  }
+}
