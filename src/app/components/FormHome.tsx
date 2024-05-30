@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FormEvent, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
-import { SvgLoadIcon } from '../svg/svgs';
+import { SvgCheckIcon, SvgLoadIcon } from '../svg/svgs';
 
 const initialValues = {
     name: "",
@@ -23,6 +23,7 @@ const FormHome = () => {
     const [values, setValues] = useState<FormValues>(initialValues);
     const [showValidation, setShowValidation] = useState(false);
     const [load, setLoad] = useState(false);
+    const [success, setSuccess] = useState(false);
 
     const handleOnChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const { name, value } = event.target;
@@ -33,46 +34,83 @@ const FormHome = () => {
     };
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-        setLoad(true)
         event.preventDefault();
+        setLoad(true);
+        setDisabled(false);
 
         if (showValidation) {
-            setDisabled(false)
-            const res = await fetch('/api/contact', {
-                method: "POST",
-                body: JSON.stringify(values),
-                headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json",
-                },
-            })
-            console.log(await res.json());
+            try {
+                const res = await fetch('/api/contact', {
+                    method: "POST",
+                    body: JSON.stringify(values),
+                    headers: {
+                        "Content-Type": "application/json",
+                        Accept: "application/json",
+                    },
+                });
 
-            toast('Tu cotizacion fue enviada!', {
-                duration: 4000,
-                position: 'bottom-center',
+                if (res.status === 200) {
+                    console.log(await res.json());
+                    setSuccess(true);
+                    setLoad(false);
+                    setDisabled(false);
 
-                // Styling
-                style: {},
-                className: 'z-50',
+                    toast('Tu cotizacion fue enviada!', {
+                        duration: 4000,
+                        position: 'bottom-center',
 
-                // Custom Icon
-                icon: '👏',
+                        // Styling
+                        style: {},
+                        className: 'z-50',
 
-                // Change colors of success/error/loading icon
-                iconTheme: {
-                    primary: '#000',
-                    secondary: '#fff',
-                },
+                        // Custom Icon
+                        icon: '👏',
 
-                // Aria
-                ariaProps: {
-                    role: 'status',
-                    'aria-live': 'polite',
-                },
-            });
-            setDisabled(true)
-            setLoad(false)
+                        // Change colors of success/error/loading icon
+                        iconTheme: {
+                            primary: '#000',
+                            secondary: '#fff',
+                        },
+
+                        // Aria
+                        ariaProps: {
+                            role: 'status',
+                            'aria-live': 'polite',
+                        },
+                    });
+                } else {
+                    throw new Error('Error en el servidor!');
+                }
+            } catch (error) {
+                console.error(error);
+
+                toast('No se logro enviar la cotizacion!', {
+                    duration: 4000,
+                    position: 'bottom-center',
+
+                    // Styling
+                    style: {},
+                    className: 'z-50',
+
+                    // Custom Icon
+                    icon: '❌',
+
+                    // Change colors of success/error/loading icon
+                    iconTheme: {
+                        primary: '#000',
+                        secondary: '#fff',
+                    },
+
+                    // Aria
+                    ariaProps: {
+                        role: 'status',
+                        'aria-live': 'polite',
+                    },
+                });
+                setLoad(false);
+                setDisabled(true);
+                setSuccess(false)
+            }
         }
     };
 
@@ -130,6 +168,9 @@ const FormHome = () => {
                         className={`w-full h-10 border rounded-md p-3  outline-none ${showValidation && !values.name ? 'border-red-600' : 'border-black/80 focus:border-black'}`}
                         placeholder="Nombre completo"
                     />
+                    <p className='text-base text-red-600'>
+                        {showValidation && !values.name && 'Nombre es requerido'}
+                    </p>
                 </div>
 
                 <div className="w-full flex flex-col gap-2">
@@ -144,6 +185,9 @@ const FormHome = () => {
                         className={`w-full h-10 border rounded-md p-3  outline-none ${showValidation && !values.company ? 'border-red-600' : 'border-black/80 focus:border-black'}`}
                         placeholder="Compañia"
                     />
+                    <p className='text-base text-red-600'>
+                        {showValidation && !values.company && 'Nombre de compañia es requerido'}
+                    </p>
                 </div>
 
                 <div className="w-full flex flex-col gap-2">
@@ -158,13 +202,21 @@ const FormHome = () => {
                         className={`w-full h-10 border rounded-md p-3  outline-none ${showValidation && !values.email ? 'border-red-600' : 'border-black/80 focus:border-black'}`}
                         placeholder="Tu email"
                     />
+                    <p className='text-base text-red-600'>
+                        {showValidation && !values.email && 'Email es requerido'}
+                    </p>
                 </div>
             </div>
 
             <div className="w-full flex flex-col gap-5">
                 <div className="flex flex-col gap-2">
                     <h3 className="font-bold text-xl">Estoy interesado en...</h3>
-                    <p className="text-lg font-light">selecciona las opciones que son de tu interes (selecciona al menos una opcion)</p>
+                    <div className='flex gap-2 items-end'>
+                        <p className="text-lg font-light">selecciona las opciones que son de tu interes * </p>
+                        <p className='text-base text-red-600'>
+                            {showValidation && values.tech.length === 0 && '(Selecciona al menos una opcion)'}
+                        </p>
+                    </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-5">
                     {tech.map((item) => (
@@ -205,7 +257,13 @@ const FormHome = () => {
 
 
                     :
-                    'Enviar'
+                    success ? (
+                        <span className='flex gap-2'>
+                            Enviado
+                            <SvgCheckIcon size={23} />
+                        </span>
+
+                    ) : 'Enviar'
                 }
             </button>
 

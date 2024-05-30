@@ -45,8 +45,7 @@ const Video: React.FC<VideoProps> = ({ videoUrl, isPlaying, isMuted, onVideoEnd 
   return (
     <video
       ref={videoRef}
-      className="w-full h-full object-cover rounded-lg"
-      autoPlay
+      className="w-full h-full object-cover rounded-lg z-20 relative"
       muted={isMuted}
     >
       <source src={videoUrl} type="video/mp4" />

@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FormEvent, useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast';
-import { SvgLoadIcon } from '../svg/svgs';
+import { SvgCheckIcon, SvgLoadIcon } from '../svg/svgs';
 
 const initialValues = {
     name: "",
@@ -44,50 +44,87 @@ const Form = () => {
     const isDisabled = !values.name || !values.lastname || !values.email || !values.emprise || !values.cel || !values.celnumeral || !values.country;
     const buttonClass = isDisabled ? 'bg-red-500/50 text-white/50' : 'bg-red-500';
     const [disabled, setDisabled] = useState<boolean>(true)
+    const [success, setSuccess] = useState(false);
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-        setLoad(true)
         event.preventDefault();
+        setLoad(true);
+        setDisabled(false);
 
         if (showValidation) {
-            setDisabled(false)
-            const res = await fetch('/api/contact', {
-                method: "POST",
-                body: JSON.stringify(values),
-                headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json",
-                },
-            })
-            console.log(await res.json());
+            try {
+                const res = await fetch('/api/contact', {
+                    method: "POST",
+                    body: JSON.stringify(values),
+                    headers: {
+                        "Content-Type": "application/json",
+                        Accept: "application/json",
+                    },
+                });
 
-            toast('Tu registro fue enviado!', {
-                duration: 4000,
-                position: 'bottom-center',
+                if (res.status === 200) {
+                    console.log(await res.json());
+                    setSuccess(true);
+                    setLoad(false);
+                    setDisabled(false);
 
-                // Styling
-                style: {},
-                className: 'z-50',
+                    toast('Tu registro fue enviado!', {
+                        duration: 4000,
+                        position: 'bottom-center',
 
-                // Custom Icon
-                icon: '👏',
+                        // Styling
+                        style: {},
+                        className: 'z-50',
 
-                // Change colors of success/error/loading icon
-                iconTheme: {
-                    primary: '#000',
-                    secondary: '#fff',
-                },
+                        // Custom Icon
+                        icon: '👏',
 
-                // Aria
-                ariaProps: {
-                    role: 'status',
-                    'aria-live': 'polite',
-                },
-            });
-            setDisabled(true)
-            setLoad(false)
+                        // Change colors of success/error/loading icon
+                        iconTheme: {
+                            primary: '#000',
+                            secondary: '#fff',
+                        },
+
+                        // Aria
+                        ariaProps: {
+                            role: 'status',
+                            'aria-live': 'polite',
+                        },
+                    });
+                } else {
+                    throw new Error('Error en el servidor!');
+                }
+            } catch (error) {
+                console.error(error);
+
+                toast('No se logro enviar la cotizacion!', {
+                    duration: 4000,
+                    position: 'bottom-center',
+
+                    // Styling
+                    style: {},
+                    className: 'z-50',
+
+                    // Custom Icon
+                    icon: '❌',
+
+                    // Change colors of success/error/loading icon
+                    iconTheme: {
+                        primary: '#000',
+                        secondary: '#fff',
+                    },
+
+                    // Aria
+                    ariaProps: {
+                        role: 'status',
+                        'aria-live': 'polite',
+                    },
+                });
+                setLoad(false);
+                setDisabled(true);
+                setSuccess(false)
+            }
         }
-
     };
     return (
         <form onSubmit={handleSubmit} className="w-full flex flex-col gap-8">
@@ -107,6 +144,9 @@ const Form = () => {
                         className={`w-full h-10 border rounded-md p-3 bg-black  outline-none placeholder:text-white/40  duration-200 transition ${showValidation && !values.name ? 'border-red-400' : 'border-white/50 focus:border-white'}`}
                         autoFocus
                     />
+                    <p className='text-base text-red-600'>
+                        {showValidation && !values.name && 'Nombre es requerido'}
+                    </p>
                 </div>
 
                 <div className="w-full flex flex-col gap-2">
@@ -123,6 +163,9 @@ const Form = () => {
                         placeholder="Apellido completo"
                         className={`w-full h-10 border rounded-md p-3 bg-black outline-none placeholder:text-white/40 duration-200 transition ${showValidation && !values.lastname ? 'border-red-400' : 'border-white/50 focus:border-white'}`}
                     />
+                    <p className='text-base text-red-600'>
+                        {showValidation && !values.lastname && 'Apellido es requerido'}
+                    </p>
                 </div>
             </div>
 
@@ -141,6 +184,9 @@ const Form = () => {
                         onBlur={handleBlur}
                         className={`w-full h-10 border rounded-md p-3 bg-black outline-none placeholder:text-white/40  duration-200 transition ${showValidation && !values.email ? 'border-red-400' : 'border-white/50 focus:border-white'}`}
                     />
+                    <p className='text-base text-red-600'>
+                        {showValidation && !values.email && 'Email es requerido'}
+                    </p>
                 </div>
 
                 <div className="w-full flex flex-col gap-2">
@@ -157,6 +203,9 @@ const Form = () => {
                         placeholder='Nombre de tu empresa'
                         className={`w-full h-10 border rounded-md p-3 bg-black outline-none placeholder:text-white/40  duration-200 transition ${showValidation && !values.emprise ? 'border-red-400' : 'border-white/50 focus:border-white'}`}
                     />
+                    <p className='text-base text-red-600'>
+                        {showValidation && !values.emprise && 'Empresa es requerido'}
+                    </p>
                 </div>
             </div>
 
@@ -169,14 +218,14 @@ const Form = () => {
 
                         <div className={`border-e pe-3 h-full flex items-center justify-center duration-200 ${showValidation && (!values.celnumeral || !values.cel) ? 'border-red-400' : 'border-white/50 focus:border-white'}`}>
                             <select
-                                value={values.celnumeral}
+                                defaultValue={values.celnumeral}
                                 onChange={handleOnChange}
                                 onBlur={handleBlur}
                                 name="celnumeral"
                                 id="celnumeral"
                                 className={`bg-transparent w-16 outline-none `}
                             >
-                                <option value="" selected disabled>Seleccione un prefijo</option>
+                                <option value={values.celnumeral} disabled>Seleccione un prefijo</option>
                                 <option value="+57">+57</option>
                                 <option value="+1">+1</option>
                                 <option value="+44">+44</option>
@@ -194,27 +243,33 @@ const Form = () => {
                             placeholder="3152058711"
                         />
                     </div>
+                    <p className='text-base text-red-600'>
+                        {showValidation && (!values.cel || !values.celnumeral) && 'Numeral y celular son requeridos'}
+                    </p>
                 </div>
 
                 <div className="w-full flex flex-col gap-2">
                     <label htmlFor="country" className="text-lg"
                     >País *</label
                     >
-                    <div className={`flex h-full gap-3 items-center pe-3 border rounded-md bg-black hover:border-white duration-200 transition ${showValidation && !values.country ? 'border-red-400' : 'border-white/50 focus:border-white'}`}>
+                    <div className={`flex h-fit gap-3 items-center pe-3 border rounded-md bg-black hover:border-white duration-200 transition ${showValidation && !values.country ? 'border-red-400' : 'border-white/50 focus:border-white'}`}>
 
                         <select
-                            value={values.country}
+                            defaultValue={values.country}
                             onChange={handleOnChange}
                             onBlur={handleBlur}
                             name="country"
                             id="country"
                             className={`bg-transparent w-full outline-none h-10 px-3 `}
                         >
-                            <option value="">Seleccione un país</option>
+                            <option value={values.country} disabled>Seleccione un país</option>
                             <option value="COL">Colombia</option>
                             <option value="USA">Estados Unidos</option>
                         </select>
                     </div>
+                    <p className='text-base text-red-600'>
+                        {showValidation && !values.country && 'Pais es requerido'}
+                    </p>
                 </div>
             </div>
 
@@ -267,7 +322,13 @@ const Form = () => {
 
 
                         :
-                        'Inicia el cambio'
+                        success ? (
+                            <span className='flex gap-2'>
+                                Enviado
+                                <SvgCheckIcon size={23} />
+                            </span>
+
+                        ) : 'Inicia el cambio'
                     }
                 </button>
             </div>

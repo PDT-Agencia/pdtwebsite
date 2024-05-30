@@ -57,9 +57,9 @@ const Header: React.FC<HeaderProps> = ({ textColor, textColorMenu, logo }) => {
             <li>
               <Link className={`${pathname === '/services' && 'bg-red-500 text-white py-1 px-4 hover:bg-red-600'} font-medium rounded-full`} href='/services'>Nuestros Servicios</Link>
             </li>
-            <li>
+            {/* <li>
               <Link className={`${pathname === '/portfolio' && 'bg-red-500 text-white py-1 px-4 hover:bg-red-600'} font-medium rounded-full`} href="/portfolio">Portafolio</Link>
-            </li>
+            </li> */}
             <li>
               <div className={`${pathname === '/about' ? 'bg-red-500 text-white px-4 hover:bg-red-600' : pathname === '/about-team' ? 'bg-red-500 text-white px-4 hover:bg-red-600' : ''} font-medium rounded-full`}>
                 <MenuSelect color={textColor} colorIcon={textColorMenu} scroll={scrollDown} navHamburguer={navHamburguer} />
