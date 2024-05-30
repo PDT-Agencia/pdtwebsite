@@ -59,7 +59,7 @@ export default function Home() {
   const changeVideo = (index: number) => {
     setActiveTab(index);
     setIsPlaying1(true);
-    setIsMuted1(true);
+    setIsMuted1(false);
   };
 
   const changeVideoNew = (index: number) => {
@@ -134,7 +134,7 @@ export default function Home() {
             <div className="w-full max-w-[1440px] text-white pb-10">
               <div className="relative">
                 <div
-                  className="absolute w-full flex flex-col gap-20 bottom-20 px-5 2xl:px-0"
+                  className="absolute w-full flex flex-col gap-20 bottom-20 px-5 2xl:px-0 z-40"
                 >
                   <div className="flex flex-col items-center justify-between w-full gap-10 md:flex-row">
                     <div className="flex gap-4 z-30">
@@ -162,7 +162,7 @@ export default function Home() {
                         className="flex gap-5 w-fit items-center justify-center md:pe-5 z-30"
                       >
                         {
-                          isPlaying1 ? (<SvgPauseIcon size={30} color="#" />) : (<SvgPlayIcon size={30} color="#" />)
+                          isPlaying1 ? (<SvgPauseIcon size={30} color="#FFFFFF" />) : (<SvgPlayIcon size={30} color="#FFFFFF" />)
                         }
                       </div>
 
@@ -171,7 +171,7 @@ export default function Home() {
                         className="flex gap-5 w-fit items-center justify-center md:pe-5 z-30"
                       >
                         {
-                          isMuted1 ? (<SvgMutedIcon size={45} color="#" />) : (< SvgSoundIcon size={45} color="#" />)
+                          isMuted1 ? (<SvgMutedIcon size={45} color="#FFFFFF" />) : (< SvgSoundIcon size={45} color="#FFFFFF" />)
                         }
                       </div>
                     </div>
@@ -194,7 +194,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="w-full h-80 bg-gradient-to-t from-black absolute bottom-10"
+            className="w-full h-80 bg-gradient-to-t from-black absolute bottom-10 z-30"
           ></div>
         </div>
       </section>
