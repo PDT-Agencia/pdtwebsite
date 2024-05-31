@@ -3,22 +3,23 @@ import IndexLayout from "./layouts/IndexLayout";
 import CardTech from "./components/cards/CardTech";
 import Image from "next/image";
 import Link from "next/link";
-import { SvgArrowIcon, SvgFacebookIcon, SvgInstagramIcon, SvgLinkedInIcon, SvgMutedIcon, SvgPauseIcon, SvgPlayIcon, SvgSoundIcon, SvgStarIcon, SvgTikTokIcon, SvgYouTubeIcon } from "./svg/svgs";
+import { SvgArrowIcon, SvgFacebookIcon, SvgInstagramIcon, SvgLinkedInIcon, SvgLoadIcon, SvgMutedIcon, SvgPauseIcon, SvgPlayIcon, SvgSoundIcon, SvgStarIcon, SvgTikTokIcon, SvgYouTubeIcon } from "./svg/svgs";
 import { SetStateAction, useEffect, useState } from "react";
 import Video from "./components/Video";
 import Slider from "./components/Slider";
 import FormHome from "./components/FormHome";
 
 const videos = [
-  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1716242511/video-1_alx7mf.mp4',
-  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1716242508/video-4_kucfma.mp4',
-  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1716242507/video-3_ozsrhn.mp4',
-  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1716242505/video-5_llwbhc.mp4',
+  ' https://res.cloudinary.com/ddeo6txjh/video/upload/v1717179753/1992-153555258_small_ohnllt.mp4',
+  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1717179668/3174-166338976_tiny_ei59qx.mp4',
+  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1717165866/TsChat_-_Video_2_khjrwo.mp4',
+  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1717179791/170655-843752693_small_dwmafo.mp4',
 ];
 
 const videosNews = [
-  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1716242511/video-1_alx7mf.mp4',
-  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1716242508/video-4_kucfma.mp4',
+  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1717093630/GDS_PRESENTACION_FINAL_kzz7g4.mp4',
+  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1717097164/WELLEZY_-_SOMOS_EL_PUENTE_1_ud1912.mp4',
+  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1717097336/INSTRUCTIVO_FINANMED_-_2024_1_hbnzsj.mp4',
 ]
 
 const messages = [
@@ -29,9 +30,26 @@ const messages = [
   "Soluciones que Inspiran, Resultados que Perduran"
 ];
 
+interface Content {
+  [key: number]: {
+    title: string;
+    text: string;
+  };
+}
+
+const content: Content = {
+  0: { title: "AIOP", text: "Somos desarrolladores del primer GDS para agencias de viajes con el enfoque de turismo en salud. Dando soluciones tecnologicas para agilizar procesos y en un solo lugar poder encontrar, todos los servicios de salud y bienestar para que las agencias de viaje puedan entrar en una nueva era del turismo, con más alcance, muchos más servicios y claro, aumentando sus ganancias." },
+  1: { title: "AIOP 2", text: "Somos desarrolladores del primer GDS para agencias de viajes con el enfoque de turismo en salud. Dando soluciones tecnologicas para agilizar procesos y en un solo lugar poder encontrar, todos los servicios de salud y bienestar para que las agencias de viaje puedan entrar en una nueva era del turismo, con más alcance, muchos más servicios y claro, aumentando sus ganancias." },
+  2: { title: "AIOP 3", text: "Somos desarrolladores del primer GDS para agencias de viajes con el enfoque de turismo en salud. Dando soluciones tecnologicas para agilizar procesos y en un solo lugar poder encontrar, todos los servicios de salud y bienestar para que las agencias de viaje puedan entrar en una nueva era del turismo, con más alcance, muchos más servicios y claro, aumentando sus ganancias." },
+};
+
 export default function Home() {
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isPlaying1, setIsPlaying1] = useState(true);
+  const [isMuted1, setIsMuted1] = useState(true);
+
+  const [isPlaying2, setIsPlaying2] = useState(true);
+  const [isMuted2, setIsMuted2] = useState(true);
+
   const [activeTab, setActiveTab] = useState(0);
   const [activeTabNew, setActiveTabNew] = useState(0);
 
@@ -40,22 +58,30 @@ export default function Home() {
 
   const changeVideo = (index: number) => {
     setActiveTab(index);
-    setIsPlaying(true);
-    setIsMuted(true);
+    setIsPlaying1(true);
+    setIsMuted1(false);
   };
 
   const changeVideoNew = (index: number) => {
     setActiveTabNew(index);
-    setIsPlaying(true);
-    setIsMuted(true);
+    setIsPlaying2(true);
+    setIsMuted2(true);
   }
 
-  const togglePlayPause = () => {
-    setIsPlaying(!isPlaying);
+  const togglePlayPause1 = () => {
+    setIsPlaying1(!isPlaying1);
   };
 
-  const toggleMuteUnmute = () => {
-    setIsMuted(!isMuted);
+  const toggleMuteUnmute1 = () => {
+    setIsMuted1(!isMuted1);
+  };
+
+  const togglePlayPause2 = () => {
+    setIsPlaying2(!isPlaying2);
+  };
+
+  const toggleMuteUnmute2 = () => {
+    setIsMuted2(!isMuted2);
   };
 
   const handleVideoEnd = () => {
@@ -98,8 +124,8 @@ export default function Home() {
           <Video
             key={activeTab}
             videoUrl={videos[activeTab]}
-            isPlaying={isPlaying}
-            isMuted={isMuted}
+            isPlaying={isPlaying1}
+            isMuted={isMuted1}
             onVideoEnd={handleVideoEnd} />
         </div>
 
@@ -108,7 +134,7 @@ export default function Home() {
             <div className="w-full max-w-[1440px] text-white pb-10">
               <div className="relative">
                 <div
-                  className="absolute w-full flex flex-col gap-20 bottom-20 px-5 2xl:px-0"
+                  className="absolute w-full flex flex-col gap-20 bottom-20 px-5 2xl:px-0 z-40"
                 >
                   <div className="flex flex-col items-center justify-between w-full gap-10 md:flex-row">
                     <div className="flex gap-4 z-30">
@@ -117,13 +143,13 @@ export default function Home() {
                       ></div>
                       <div className="flex flex-col gap-2">
                         <h2 className="text-4xl font-extralight">
-                        {firstPart.split(' ')[0]}{' '}
+                          {firstPart.split(' ')[0]}{' '}
                           <span className="font-medium"
                           >{firstPart.split(' ').slice(1).join(' ')}</span
                           >
                         </h2>
                         <h2 className="text-4xl font-extralight">
-                        {secondPart.split(' ')[0]}{' '}
+                          {secondPart.split(' ')[0]}{' '}
                           <span className="font-medium"
                           >{secondPart.split(' ').slice(1).join(' ')}</span
                           >
@@ -132,20 +158,20 @@ export default function Home() {
                     </div>
                     <div className="flex gap-3">
                       <div
-                        onClick={() => togglePlayPause()}
+                        onClick={() => togglePlayPause1()}
                         className="flex gap-5 w-fit items-center justify-center md:pe-5 z-30"
                       >
                         {
-                          isPlaying ? (<SvgPauseIcon size={30} />) : (<SvgPlayIcon size={30} />)
+                          isPlaying1 ? (<SvgPauseIcon size={30} color="#FFFFFF" />) : (<SvgPlayIcon size={30} color="#FFFFFF" />)
                         }
                       </div>
 
                       <div
-                        onClick={() => toggleMuteUnmute()}
+                        onClick={() => toggleMuteUnmute1()}
                         className="flex gap-5 w-fit items-center justify-center md:pe-5 z-30"
                       >
                         {
-                          isMuted ? (<SvgSoundIcon size={45} />) : (<SvgMutedIcon size={45} />)
+                          isMuted1 ? (<SvgMutedIcon size={45} color="#FFFFFF" />) : (< SvgSoundIcon size={45} color="#FFFFFF" />)
                         }
                       </div>
                     </div>
@@ -168,7 +194,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="w-full h-80 bg-gradient-to-t from-black absolute bottom-10"
+            className="w-full h-80 bg-gradient-to-t from-black absolute bottom-10 z-30"
           ></div>
         </div>
       </section>
@@ -301,8 +327,8 @@ export default function Home() {
       <section
         className="w-full bg-white flex items-center justify-center py-20 pt-0 relative px-5 2xl:px-0"
       >
-        <div className="max-w-[1440px] flex flex-col items-center gap-10">
-          <div className="flex flex-col h-90 min-h-90 xl:flex-row items-center gap-10 py-10">
+        <div className="w-full max-w-[1440px] flex flex-col items-center gap-10">
+          <div className="w-full flex flex-col h-90 min-h-90 xl:flex-row items-center gap-10 py-10">
             <div className="flex flex-col gap-5 w-full lg:w-[70%]">
               <h2 className="text-3xl lg:text-4xl uppercase font-extrabold">
                 Hacemos realidad <br />
@@ -310,53 +336,62 @@ export default function Home() {
               </h2>
 
               <div>
-                <h6 className="text-2xl uppercase font-semibold">aiop</h6>
+                <h6 className="text-2xl uppercase font-semibold">{content[activeTabNew].title}</h6>
                 <p className="font-light text-lg">
-                  Somos desarrolladores del primer GDS para agencias de viajes con el enfoque de turismo en salud.
-                  <br /><br />
-
-                  Dando soluciones tecnologicas para agilizar procesos y en un solo lugar poder encontrar, todos los servicios de salud y bienestar para que las agencias de viaje puedan entrar en una nueva era del turismo, con más alcance, muchos más servicios y claro, aumentando sus ganancias.
+                  {content[activeTabNew].text}
                 </p>
               </div>
             </div>
 
             <div className="w-full relative">
-              <div className="h-[27rem]">
+              <div className="h-[27rem] relative">
+                <div className="bg-slate-200 w-full h-full animate-pulse rounded-lg absolute flex items-center justify-center z-0">
+                  <div className='animate-spin opacity-60'>
+                    <SvgLoadIcon size={40} color="#F0F0F0" />
+                  </div>
+                </div>
                 <Video
                   key={activeTabNew}
                   videoUrl={videosNews[activeTabNew]}
-                  isPlaying={isPlaying}
-                  isMuted={isMuted}
+                  isPlaying={isPlaying2}
+                  isMuted={isMuted2}
                   onVideoEnd={handleVideoEndNew} />
               </div>
 
 
-              <div className="absolute left-3 bottom-5 flex gap-2">
-                <button onClick={() => changeVideoNew(0)} className={`rotate-180 rounded-full p-2 ${activeTabNew === 0 ? 'bg-white/30' : 'bg-white'}`}>
+              <div className="absolute left-3 bottom-5 flex gap-2 z-20">
+                <button
+                  onClick={() => changeVideoNew((activeTabNew - 1 + 3) % 3)}
+                  disabled={activeTabNew === 0}
+                  className={`rounded-full p-2 rotate-180 ${activeTabNew === 0 ? 'bg-white/30' : 'bg-white'}`}
+                >
                   <SvgArrowIcon size={20} color="bg-black" />
                 </button>
-
-                <button onClick={() => changeVideoNew(1)} className={` rounded-full p-2 ${activeTabNew === 1 ? 'bg-white/30' : 'bg-white'}`}>
+                <button
+                  onClick={() => changeVideoNew((activeTabNew + 1) % 3)}
+                  disabled={activeTabNew === 2}
+                  className={`rounded-full p-2 ${activeTabNew === 2 ? 'bg-white/30' : 'bg-white'}`}
+                >
                   <SvgArrowIcon size={20} color="bg-black" />
                 </button>
               </div>
 
               <div className="flex gap-1 absolute bottom-5 right-3">
                 <div
-                  onClick={() => togglePlayPause()}
+                  onClick={() => togglePlayPause2()}
                   className="flex gap-5 w-fit items-center justify-center md:pe-5 z-30 cursor-pointer"
                 >
                   {
-                    isPlaying ? (<SvgPauseIcon size={30} />) : (<SvgPlayIcon size={30} />)
+                    isPlaying2 ? (<SvgPauseIcon size={30} color={`${activeTabNew === 2 ? '#505050' : '#FFFFFF'}`} />) : (<SvgPlayIcon size={30} color={`${activeTabNew === 2 ? '#505050' : '#FFFFFF'}`} />)
                   }
                 </div>
 
                 <div
-                  onClick={() => toggleMuteUnmute()}
+                  onClick={() => toggleMuteUnmute2()}
                   className="flex gap-5 w-fit items-center justify-center md:pe-5 z-30 cursor-pointer"
                 >
                   {
-                    isMuted ? (<SvgSoundIcon size={40} />) : (<SvgMutedIcon size={40} />)
+                    isMuted2 ? (<SvgMutedIcon size={40} color={`${activeTabNew === 2 ? '#505050' : '#FFFFFF'}`} />) : (< SvgSoundIcon size={40} color={`${activeTabNew === 2 ? '#505050' : '#FFFFFF'}`} />)
                   }
                 </div>
               </div>
