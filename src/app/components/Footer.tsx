@@ -34,7 +34,7 @@ const Footer = () => {
               <h3 className='font-semibold text-xl'>Síguenos en:</h3>
               <div className='flex gap-2'>
                 <Link href='https://www.instagram.com/agenciademediospdt/' target="_blank" className='bg-red-500 hover:bg-red-600 duration-200 w-fit p-3 rounded-full'><SvgInstagramIcon size={20} /></Link>
-                <Link href='https://www.instagram.com/agenciademediospdt/' target="_blank" className='bg-red-500 hover:bg-red-600 duration-200 w-fit p-3 rounded-full'><SvgWhatsAppIcon size={20} /></Link>
+                
                 {/* <Link href='/' className='bg-red-500 hover:bg-red-600 duration-200 w-fit p-3 rounded-full'><SvgFacebookIcon size={20} /></Link>
               <Link href='/' className='bg-red-500 hover:bg-red-600 duration-200 w-fit p-3 rounded-full'><SvgLinkedInIcon size={20} /></Link>
               <Link href='/' className='bg-red-500 hover:bg-red-600 duration-200 w-fit p-3 rounded-full'><SvgTikTokIcon size={20} /></Link>

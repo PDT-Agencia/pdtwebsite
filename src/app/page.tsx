@@ -8,6 +8,7 @@ import { SetStateAction, useEffect, useState } from "react";
 import Video from "./components/Video";
 import Slider from "./components/Slider";
 import FormHome from "./components/FormHome";
+import WhatsApp from "./components/WhatsApp";
 
 const videos = [
   'https://res.cloudinary.com/ddeo6txjh/video/upload/v1717165866/TsChat_-_Video_2_khjrwo.mp4'
@@ -35,9 +36,9 @@ interface Content {
 }
 
 const content: Content = {
-  0: { title: "AIOP", text: "Somos desarrolladores del primer GDS para agencias de viajes con el enfoque de turismo en salud. Dando soluciones tecnologicas para agilizar procesos y en un solo lugar poder encontrar, todos los servicios de salud y bienestar para que las agencias de viaje puedan entrar en una nueva era del turismo, con más alcance, muchos más servicios y claro, aumentando sus ganancias." },
-  1: { title: "AIOP 2", text: "Somos desarrolladores del primer GDS para agencias de viajes con el enfoque de turismo en salud. Dando soluciones tecnologicas para agilizar procesos y en un solo lugar poder encontrar, todos los servicios de salud y bienestar para que las agencias de viaje puedan entrar en una nueva era del turismo, con más alcance, muchos más servicios y claro, aumentando sus ganancias." },
-  2: { title: "AIOP 3", text: "Somos desarrolladores del primer GDS para agencias de viajes con el enfoque de turismo en salud. Dando soluciones tecnologicas para agilizar procesos y en un solo lugar poder encontrar, todos los servicios de salud y bienestar para que las agencias de viaje puedan entrar en una nueva era del turismo, con más alcance, muchos más servicios y claro, aumentando sus ganancias." },
+  0: { title: "AIOP", text: "AIOP revoluciona el turismo en salud, centralizando toda la información y servicios que necesitas. Desde paquetes que combinan vuelos, hoteles y especialistas médicos, hasta opciones de turismo y bienestar. Todo en una sola plataforma accesible, única y pensado para la gestión de tu agencia." },
+  1: { title: "Wellezy", text: "En PDT, desarrollamos el sitio web de Wellezy, la única startup en Colombia que ofrece soluciones tecnológicas en turismo de salud y bienestar. Compra tus paquetes de turismo en salud, reserva tu vuelo, y personaliza tu experiencia con servicios como traslados, alquiler de autos, seguros, especialistas, clínicas, y mucho más. Nuestro objetivo fue crear una plataforma intuitiva y accesible que permita a los usuarios encontrar y adquirir todo lo que necesitan para su viaje de salud en un solo lugar. Con Wellezy, tienes la seguridad de estar apoyado por una red de servicios integrados que te brindarán tranquilidad y comodidad durante todo el proceso." },
+  2: { title: "Finanmed", text: "Desarrollamos el sitio web de Finanmed, que facilita el acceso a servicios especializados en medicina y cirugía general, cirugía plástica, estética y reconstructiva, tratamientos estéticos, ginecología, odontología, y venta de insumos y dispositivos médicos a nivel nacional e internacional, mediante FINANCIACIÓN SIN BANCOS. Nuestro objetivo fue crear una plataforma intuitiva y accesible, donde tanto usuarios como médicos puedan encontrar y acceder fácilmente a un extenso portafolio de procedimientos. Con Finanmed, hemos logrado una herramienta que conecta a los pacientes con los servicios médicos que buscan, brindando soluciones financieras que hacen posible el acceso a la salud de calidad." },
 };
 
 export default function Home() {
@@ -116,6 +117,7 @@ export default function Home() {
 
   return (
     <IndexLayout>
+      <WhatsApp />
       <section className="w-full h-screen">
         <div className="w-full h-full">
           <Video
