@@ -40,7 +40,7 @@ const FormHome = () => {
 
         if (showValidation) {
             try {
-                const res = await fetch('/api/contact', {
+                const res = await fetch('http://127.0.0.1:8000/api/cotization', {
                     method: "POST",
                     body: JSON.stringify(values),
                     headers: {
@@ -252,7 +252,7 @@ const FormHome = () => {
                 {load ?
 
                     <div className='animate-spin'>
-                        <SvgLoadIcon size={25} />
+                        <SvgLoadIcon  size={25} />
                     </div>
 
 
