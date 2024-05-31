@@ -10,10 +10,7 @@ import Slider from "./components/Slider";
 import FormHome from "./components/FormHome";
 
 const videos = [
-  ' https://res.cloudinary.com/ddeo6txjh/video/upload/v1717179753/1992-153555258_small_ohnllt.mp4',
-  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1717179668/3174-166338976_tiny_ei59qx.mp4',
-  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1717165866/TsChat_-_Video_2_khjrwo.mp4',
-  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1717179791/170655-843752693_small_dwmafo.mp4',
+  'https://res.cloudinary.com/ddeo6txjh/video/upload/v1717165866/TsChat_-_Video_2_khjrwo.mp4'
 ];
 
 const videosNews = [
