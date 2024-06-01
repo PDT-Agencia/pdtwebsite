@@ -40,7 +40,7 @@ const FormHome = () => {
 
         if (showValidation) {
             try {
-                const res = await fetch('http://127.0.0.1:8000/api/cotization', {
+                const res = await fetch('https://pdtagencia.aiop.com.co/api/cotization', {
                     method: "POST",
                     body: JSON.stringify(values),
                     headers: {
