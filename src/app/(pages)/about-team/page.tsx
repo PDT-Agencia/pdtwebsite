@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import Team from '../../components/Team'
 import IndexLayout from '@/app/layouts/IndexLayout'
+import Banner from "../../assets/about-team/banner/1.png"
 
 const AboutTeam = () => {
     const [invisible, setInvisible] = useState(false);
@@ -44,7 +45,7 @@ const AboutTeam = () => {
                         <div
                             className="w-full h-[150rem] bg-gradient-to-t from-black absolute bottom-0"
                         ></div>
-                        <Image src="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242213/about-3_gq4cjw.jpg" width={3000} height={3000} loading='lazy' alt='Image Banner' className='w-full h-full object-cover' />
+                        <Image src={Banner} width={3000} height={3000} loading='lazy' alt='Image Banner' className='w-full h-full object-cover' />
                     </div>
                 </div>
             </section>

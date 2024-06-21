@@ -1,11 +1,12 @@
 import React from 'react'
 import CardService from '../cards/CardService'
 import CardImage from '../cards/CardImage'
+import Service from "..//.//..//assets/services/images/1.png"
 
 const DevelopmentSoftware = () => {
     return (
         <div className="w-full max-w-[1440px] flex flex-col gap-20 px-5 2xl:px-0">
-            <CardImage image="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242216/service-1_hm7lui.png" title='Desarrollo de software' />
+            <CardImage image={Service} title='Desarrollo de software' />
             <div
                 className="flex flex-wrap gap-8 items-center justify-center md:items-start md:justify-between text-white mt-10"
             >

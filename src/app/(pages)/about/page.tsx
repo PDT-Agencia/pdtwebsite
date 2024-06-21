@@ -4,15 +4,27 @@ import React, { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
+import Banner from "../../assets/about/1.png"
+import DOG from "../../assets/home/pdt/dog.png"
+
+import New1 from "../../assets/blog/news/1.png"
+import New2 from "../../assets/blog/news/2.png"
+import New3 from "../../assets/blog/news/3.png"
+import New4 from "../../assets/blog/news/4.png"
+import New5 from "../../assets/blog/news/5.png"
+import New6 from "../../assets/blog/news/6.png"
+
+import LogoWhite from "../../assets/logos/2.png"
+
 const About = () => {
 
     const items = [
-        { title: 'Somos creativos', image: 'https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242214/about-2_bjbgio.png', description: 'Nos motiva la innovación. Cada proyecto que abordamos es una oportunidad para reinventar y superar límites creativos.' },
-        { title: 'Somos responsables', image: 'https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242357/portfolio-4_ulqifm.png', description: 'La responsabilidad es nuestro pilar. Cada acción y decisión está guiada por un compromiso firme con la calidad y la ética.' },
-        { title: 'Somos eficientes', image: 'https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242356/portfolio-1_sebc4h.png', description: 'La eficiencia es clave. Optimizamos cada proceso y recurso para ofrecer resultados rápidos sin comprometer la excelencia.' },
-        { title: 'Somos íntegros', image: 'https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242289/card-6_aurwue.png', description: 'La integridad nos define. Actuamos con transparencia y honestidad, asegurando la confianza y el respeto en todas nuestras relaciones.' },
-        { title: 'Somos adaptativos', image: 'https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242217/service-3_gnaif0.png', description: 'Nos adaptamos a los cambios. En un entorno dinámico, nuestra flexibilidad nos permite innovar y responder con agilidad.' },
-        { title: 'Somos evolución', image: 'https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242217/services_upnfu0.png', description: 'Evolucionamos constantemente. Nuestra búsqueda de mejoras continuas nos lleva a crecer y a ofrecer siempre lo mejor.' }
+        { title: 'Somos creativos', image: New1, description: 'Nos motiva la innovación. Cada proyecto que abordamos es una oportunidad para reinventar y superar límites creativos.' },
+        { title: 'Somos responsables', image: New2, description: 'La responsabilidad es nuestro pilar. Cada acción y decisión está guiada por un compromiso firme con la calidad y la ética.' },
+        { title: 'Somos eficientes', image: New3, description: 'La eficiencia es clave. Optimizamos cada proceso y recurso para ofrecer resultados rápidos sin comprometer la excelencia.' },
+        { title: 'Somos íntegros', image: New4, description: 'La integridad nos define. Actuamos con transparencia y honestidad, asegurando la confianza y el respeto en todas nuestras relaciones.' },
+        { title: 'Somos adaptativos', image: New5, description: 'Nos adaptamos a los cambios. En un entorno dinámico, nuestra flexibilidad nos permite innovar y responder con agilidad.' },
+        { title: 'Somos evolución', image: New6, description: 'Evolucionamos constantemente. Nuestra búsqueda de mejoras continuas nos lleva a crecer y a ofrecer siempre lo mejor.' }
     ];
 
 
@@ -22,10 +34,10 @@ const About = () => {
 
     return (
         <>
-            <Header logo="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242215/logo_zx0gmc.png" textColor='text-white' textColorMenu='#fff' />
+            <Header logo={LogoWhite} textColor='text-white' textColorMenu='#fff' />
             <section className='w-full h-full min-h-screen flex flex-col items-center justify-center bg-black'>
                 <div className='flex items-center justify-center'>
-                    <Image src="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242214/about_u3jdis.png" width={3000} height={3000} loading='lazy' alt='About' />
+                    <Image src={Banner} width={3000} height={3000} loading='lazy' alt='About' />
                 </div>
 
                 <div className='w-full max-w-[1440px] h-full pb-20 px-5 md:px-10'>
@@ -115,7 +127,7 @@ const About = () => {
                             <div className='w-full h-80  bottom-0 bg-gradient-to-t from-black  absolute'></div>
                             <Image className='w-full h-full max-h-[32rem] object-cover' src={selectedItem.image} width={3000} height={3000} loading='lazy' alt='About person' />
                             <p className='absolute duration-200 bottom-2 left-2 w-56 sm:w-[30rem] sm:bottom-5 sm:left-5 md:bottom-10 md:left-10 md:w-[23rem] lg:w-[31rem] xl:w-[37rem] text-sm sm:text-lg md:text-xl font-extralight'>{selectedItem.description}</p>
-                            <Image className='absolute right-0 bottom-0 w-20 md:w-28 lg:w-32' width={100} height={100} src="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242215/perrito-script_x95jnp.png" loading='lazy' alt='Logo Dog' />
+                            <Image className='absolute right-0 bottom-0 w-20 md:w-28 lg:w-32' width={100} height={100} src={DOG} loading='lazy' alt='Logo Dog' />
                         </div>
                     </div>
 

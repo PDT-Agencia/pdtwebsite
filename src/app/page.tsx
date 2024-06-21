@@ -23,16 +23,34 @@ import Slider from "./components/Slider";
 import FormHome from "./components/FormHome";
 import WhatsApp from "./components/WhatsApp";
 
+import Tech1 from "../app/assets/home/tech/1.png"
+import Tech2 from "../app/assets/home/tech/2.png"
+import Tech3 from "../app/assets/home/tech/3.png"
+import Tech4 from "../app/assets/home/tech/4.png"
+
+import Logo1 from "../app/assets/home/logos/1.png"
+import Logo2 from "../app/assets/home/logos/2.png"
+import Logo3 from "../app/assets/home/logos/3.png"
+import Logo4 from "../app/assets/home/logos/4.png"
+import Logo5 from "../app/assets/home/logos/5.png"
+
+import Foco from "../app/assets/home/foco/foco.png"
+
+import PDT from "../app/assets/home/pdt/dark/pdt.png"
+
+import DOG from "../app/assets/home/pdt/dog.png"
+import User from "../app/assets/home/pdt/user.png"
+
 const videos = [
-  "https://res.cloudinary.com/ddeo6txjh/video/upload/v1717179753/1992-153555258_small_ohnllt.mp4",
-  "https://res.cloudinary.com/ddeo6txjh/video/upload/v1717179668/3174-166338976_tiny_ei59qx.mp4",
-  "https://res.cloudinary.com/ddeo6txjh/video/upload/v1717179791/170655-843752693_small_dwmafo.mp4",
+  "https://cdn.pixabay.com/video/2015/11/02/1236-144355017_large.mp4",
+  "https://cdn.pixabay.com/video/2016/01/29/1992-153555258_large.mp4",
+  "https://cdn.pixabay.com/video/2024/06/06/215500_large.mp4",
 ];
 
 const videosNews = [
-  "https://res.cloudinary.com/ddeo6txjh/video/upload/v1717093630/GDS_PRESENTACION_FINAL_kzz7g4.mp4",
-  "https://res.cloudinary.com/ddeo6txjh/video/upload/v1717097164/WELLEZY_-_SOMOS_EL_PUENTE_1_ud1912.mp4",
-  "https://res.cloudinary.com/ddeo6txjh/video/upload/v1717097336/INSTRUCTIVO_FINANMED_-_2024_1_hbnzsj.mp4",
+  "/1.mp4",
+  "/2.mp4",
+  "/3.mp4",
 ];
 
 const messages = [
@@ -130,37 +148,37 @@ export default function Home() {
 
   const images = [
     {
-      src: "https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242325/Aiop_xwd0ba.png",
+      src: Logo1,
       width: 200,
       height: 80,
       alt: "Aiop",
     },
     {
-      src: "https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242325/Dc_t5nyzq.png",
+      src: Logo2,
       width: 250,
       height: 130,
       alt: "DC",
     },
     {
-      src: "https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242326/Finan_a9l6vt.png",
+      src: Logo3,
       width: 350,
       height: 230,
       alt: "Finan",
     },
     {
-      src: "https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242328/Inmave_k3t68k.png",
+      src: Logo4,
       width: 280,
       height: 160,
       alt: "Inmave",
     },
     {
-      src: "https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242328/Union_zopomu.png",
+      src: Logo5,
       width: 280,
       height: 160,
       alt: "Union",
     },
     {
-      src: "https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242325/Aiop_xwd0ba.png",
+      src: Logo1,
       width: 200,
       height: 80,
       alt: "Aiop",
@@ -251,25 +269,25 @@ export default function Home() {
         <div className="max-w-[1440px] w-full flex flex-wrap gap-5 justify-center py-5 px-5 md:px-10">
           <CardTech
             url="/services?computer#section"
-            image="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242214/card-1_spmtdj.png"
+            image={Tech1}
             title="Desarrollo de"
             description="Software"
           />
           <CardTech
             url="/services?scuares#section"
-            image="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242215/card-3_fc20q0.png"
+            image={Tech2}
             title="Diseño de"
             description="Aplicaciones"
           />
           <CardTech
             url="/services?paint#section"
-            image="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242214/card-2_ylo514.png"
+            image={Tech3}
             title="Diseño"
             description="Gráfico"
           />
           <CardTech
             url="/services?picture#section"
-            image="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242213/card-4_xkex7i.png"
+            image={Tech4}
             title="Producción"
             description="Audiovisual"
           />
@@ -311,7 +329,7 @@ export default function Home() {
             className={`hidden xl:block w-[600px] 2xl:w-[800px] ${
               scrollPosition.y >= 1000 && "animate-blink"
             }`}
-            src="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242216/luz-bombilla_cb96yv.png"
+            src={Foco}
             width={300}
             height={300}
             loading="lazy"
@@ -353,7 +371,7 @@ export default function Home() {
       <section className="w-full bg-white flex items-center justify-center pt-40 relative px-10 2xl:px-0">
         <div className="w-40 h-40 lg:w-60 lg:h-60 rounded-full shadow-xl flex items-center justify-center p-10 absolute bg-white -top-20 md:-top-28">
           <Image
-            src="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242213/logo-dark_ay78eq.png"
+            src={PDT}
             alt="Logo"
             width={200}
             height={200}
@@ -473,7 +491,7 @@ export default function Home() {
           <div className="w-full xl:w-[70%] xl:border-e p-0  xl:pe-10 flex flex-col gap-10">
             <div className="flex flex-col items-center md:items-start md:flex-row gap-8 pt-10">
               <Image
-                src="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242215/perrito-script_x95jnp.png"
+                src={DOG}
                 width={300}
                 height={300}
                 loading="lazy"

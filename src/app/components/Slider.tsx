@@ -1,11 +1,11 @@
 // components/Slider.js
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { useState, useEffect } from 'react';
 import { SvgArrowIcon } from '../svg/svgs';
 import { usePathname } from 'next/navigation';
 
 interface Image {
-    src: string;
+    src: string | StaticImageData;
     width: number;
     height: number;
     alt: string;

@@ -1,40 +1,45 @@
 import React from 'react';
 import TeamMember from './TeamMember';
+import New1 from "../assets/about-team/team/1.png"
+import New2 from "../assets/about-team/team/2.png"
+import New3 from "../assets/about-team/team/3.png"
+import New4 from "../assets/about-team/team/4.png"
+import New5 from "../assets/about-team/team/5.png"
 
 const team = [
     {
         id: 1,
         name: 'CARLOS CÁRDENAS',
         rol: 'Lider en desarrollo',
-        image: "https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242379/partner-1_gzscio.png",
+        image: New1,
         url: '/partner/1'
     },
     {
         id: 2,
         name: 'KEVIN BARRAGÁN',
         rol: 'Lider en diseño',
-        image: "https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242380/partner-2_x7jxku.png",
+        image: New2,
         url: '/partner/2'
     },
     {
         id: 3,
         name: 'JENNIFER ÁLVAREZ',
         rol: 'Diseñadora gráfica',
-        image: "https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242380/partner-3_kzxqsl.png",
+        image: New3,
         url: '/partner/3'
     },
     {
         id: 4,
         name: 'ROBERTO GAMBOA',
         rol: 'Diseñador gráfico',
-        image: "https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242382/partner-4_raoet0.png",
+        image: New4,
         url: '/partner/4'
     },
     {
         id: 5,
         name: 'DANIEL ARGUELLES',
         rol: 'Desarrollador backend',
-        image: "https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242383/partner-5_wnwnsn.png",
+        image: New5,
         url: '/partner/5'
     }
 ];

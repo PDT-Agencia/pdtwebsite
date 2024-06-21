@@ -1,13 +1,14 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import LogoWhite from "../../app/assets/logos/2.png"
 
 const IndexLayout = ({ children }: Readonly<{
     children: React.ReactNode;
 }>) => {
     return (
         <>
-            <Header logo="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242215/logo_zx0gmc.png" textColor='text-white' textColorMenu='#fff' />
+            <Header logo={LogoWhite} textColor='text-white' textColorMenu='#fff' />
             <main className='bg-black w-full h-full'>
                 {children}
             </main>

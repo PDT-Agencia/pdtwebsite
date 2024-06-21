@@ -4,13 +4,14 @@ import React from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import IndexLayout from '@/app/layouts/IndexLayout'
 import Form from '@/app/components/Form';
+import Banner from "../../assets/about/1.png"
 
 const Contact = () => {
     return (
         <IndexLayout>
             <section className='w-full h-full flex flex-col items-center justify-center bg-black relative py-36 px-6 md:px-0'>
                 <div className='absolute top-0 flex items-center justify-center backdrop-blur-xl opacity-50 blur-sm'>
-                    <Image src="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242214/about_u3jdis.png" alt='About' width={2000} height={2000} loading='lazy' />
+                    <Image src={Banner} alt='About' width={2000} height={2000} loading='lazy' />
                 </div>
 
                 <div className=' w-full h-full flex items-center justify-center z-20 text-white'>
