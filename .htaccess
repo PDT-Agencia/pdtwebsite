@@ -8,3 +8,15 @@
   RewriteRule . /index.html [L]
   ErrorDocument 404 /404.html
 </IfModule> 
+
+Options -Indexes -MultiViews
+
+DirectorySlash Off
+
+RewriteCond %{DOCUMENT_ROOT}/${REQUEST_URI} -f
+RewriteRule !\.\w{2,4}$ %{REQUEST_URI}.html [L]
+
+RewriteCond %{DOCUMENT_ROOT}/${REQUEST_URI}/index.html -f
+RewriteRule !\.\w{2,4}$ %{REQUEST_URI}/index.html [L]
+
+ErrorDocument 404 /404.html

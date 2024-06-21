@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const WhatsApp = () => {
     return (
-        <Link href='https://wa.link/yb77bx' target="_blank" className='fixed z-50 bottom-8 right-8 shadow-xl border-2 border-white bg-green-500 hover:bg-green-600 duration-200 w-fit p-5 rounded-full rounded-br-none'><SvgWhatsAppIcon size={40} /></Link>
+        <Link href='https://wa.link/yb77bx' target="_blank" className='fixed z-50 bottom-8 right-8 shadow-xl border-2 border-white bg-green-500 hover:bg-green-600 duration-200 w-fit p-3 rounded-full rounded-br-none'><SvgWhatsAppIcon size={30} /></Link>
     )
 }
 
