@@ -1,11 +1,12 @@
 import React from 'react'
 import CardService from '../cards/CardService'
 import CardImage from '../cards/CardImage'
+const Service = "https://pdt-website-videos.vercel.app/_next/static/media/4.17fbd747.png"
 
 const DesignGrafic = () => {
     return (
         <div className="w-full max-w-[1440px] flex flex-col gap-20 px-5 2xl:px-0">
-            <CardImage image="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242217/service-3_gnaif0.png" title='Diseño gráfico' />
+            <CardImage image={Service} title='Diseño gráfico' />
             <div
                 className="flex flex-wrap gap-8 items-center justify-center md:items-start md:justify-between text-white mt-10"
             >

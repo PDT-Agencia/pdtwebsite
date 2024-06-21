@@ -10,6 +10,8 @@ import DesignAplications from '../../components/services/DesignAplications';
 import AudioVisualProducts from '../../components/services/AudioVisualProducts';
 import { IconType } from '../../interface/types';
 
+const Banner = "https://pdt-website-videos.vercel.app/_next/static/media/1.5bd8f4c7.png"
+
 const Services = () => {
   const [selectedIcon, setSelectedIcon] = useState<IconType | null>(null);
 
@@ -47,7 +49,7 @@ const Services = () => {
             <div
               className="w-full h-[150rem] bg-gradient-to-t from-black absolute bottom-0"
             ></div>
-            <Image src="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242217/services_upnfu0.png" alt='Image Banner' width={300} height={300} className='w-full h-full object-cover' loading='lazy' />
+            <Image src={Banner} alt='Image Banner' width={300} height={300} className='w-full h-full object-cover' loading='lazy' />
           </div>
         </div>
       </section>

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { SvgCloseIcon, SvgHamburguerIcon } from '../svg/svgs';
 import { usePathname, useSearchParams } from 'next/navigation';
 import MenuSelect from './Select';
+const LogoWhite = "https://pdt-website-videos.vercel.app/_next/static/media/2.2e589d59.png"
 
 interface HeaderProps {
   textColorMenu: string;
@@ -37,13 +38,13 @@ const Header: React.FC<HeaderProps> = ({ textColor, textColorMenu, logo }) => {
     >
       <div className='relative w-full max-w-[1440px] px-5 py-6 flex justify-between items-center gap-5'>
         <Link href="/" className={`${navHamburguer && 'hidden'}`}>
-          <Image src={scrollDown ? "https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242215/logo_zx0gmc.png" : logo} alt='Logo' width={80} height={80} loading='lazy' />
+          <Image src={scrollDown ? LogoWhite : logo} alt='Logo' width={80} height={80} loading='lazy' />
         </Link>
 
         <ul className={`${scrollDown && textColor === 'text-black' ? "text-white" : !navHamburguer ? textColor : 'text-white'} pt-6 lg:pt-0 px-6  absolute right-0 w-full top-0 bottom-0 bg-black/95 sm:w-fit h-screen ${navHamburguer ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-500 lg:translate-x-0 lg:bg-transparent lg:flex lg:flex-row lg:items-center lg:h-full lg:relative lg:transition-none text-xl lg:text-lg flex flex-col items-center gap-10 lg:gap-5`}>
           <div className='flex justify-between items-center w-full lg:hidden'>
             <Link href="/" className={`${navHamburguer ? 'block' : 'hidden'} sm:hidden`}>
-              <Image src="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242215/logo_zx0gmc.png" alt='Logo' width={80} height={80} loading='lazy' />
+              <Image src={LogoWhite} alt='Logo' width={80} height={80} loading='lazy' />
             </Link>
             <button onClick={() => setNavHamburguer(false)}>
               <SvgCloseIcon size={40} />
@@ -57,9 +58,9 @@ const Header: React.FC<HeaderProps> = ({ textColor, textColorMenu, logo }) => {
             <li>
               <Link className={`${pathname === '/services' && 'bg-red-500 text-white py-1 px-4 hover:bg-red-600'} font-medium rounded-full`} href='/services'>Nuestros Servicios</Link>
             </li>
-            <li>
+            {/* <li>
               <Link className={`${pathname === '/portfolio' && 'bg-red-500 text-white py-1 px-4 hover:bg-red-600'} font-medium rounded-full`} href="/portfolio">Portafolio</Link>
-            </li>
+            </li> */}
             <li>
               <div className={`${pathname === '/about' ? 'bg-red-500 text-white px-4 hover:bg-red-600' : pathname === '/about-team' ? 'bg-red-500 text-white px-4 hover:bg-red-600' : ''} font-medium rounded-full`}>
                 <MenuSelect color={textColor} colorIcon={textColorMenu} scroll={scrollDown} navHamburguer={navHamburguer} />

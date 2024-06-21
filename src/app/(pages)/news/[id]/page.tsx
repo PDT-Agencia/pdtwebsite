@@ -30,7 +30,7 @@ export default function Page({ params }: { params: { id: string } }) {
 
   return (
     <>
-      <Header logo="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242214/logo-white_iemria.png" textColor='text-black' textColorMenu='#000' />
+      <Header logo="https://pdt-website-videos.vercel.app/_next/static/media/1.c48eb77b.png" textColor='text-black' textColorMenu='#000' />
       <section className='w-full h-full pt-40 pb-20 flex flex-col items-center justify-center'>
         <div className='w-full max-w-[1440px] flex flex-col gap-10 px-5 md:px-10'>
           <div className='flex flex-col gap-20'>
@@ -47,7 +47,7 @@ export default function Page({ params }: { params: { id: string } }) {
 
                 <div className='bg-black p-7 rounded-xl flex flex-col lg:flex-row items-center gap-10  text-white'>
                   <div className='bg-red-100 w-44 lg:h-36 h-44 flex items-center justify-center px-4 rounded-full'>
-                    <Image src="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242214/logo-white_iemria.png" width={400} height={400} loading='lazy' alt='Logo' className='w' />
+                    <Image src="https://pdt-website-videos.vercel.app/_next/static/media/1.c48eb77b.png" width={400} height={400} loading='lazy' alt='Logo' className='w' />
                   </div>
 
                   <div className='w-full flex flex-col gap-2'>
