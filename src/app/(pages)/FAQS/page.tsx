@@ -3,6 +3,7 @@
 import IndexLayout from '@/app/layouts/IndexLayout';
 import Image from 'next/image';
 import React, { useState } from 'react';
+const Banner = "https://pdt-website-videos.vercel.app/_next/static/media/1.3ffa2222.png"
 
 const FAQS: React.FC = () => {
   const faqs = [
@@ -50,7 +51,7 @@ const FAQS: React.FC = () => {
     <IndexLayout>
       <section className="w-full flex justify-center items-center relative">
         <div className='hidden absolute top-0 lg:flex items-center justify-center backdrop-blur-xl opacity-50 blur-sm'>
-          <Image src="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242214/about_u3jdis.png" alt='About' width={2000} height={2000} loading='lazy' />
+          <Image src={Banner} alt='About' width={2000} height={2000} loading='lazy' />
         </div>
         <div className='w-full max-w-[1440px] py-20'>
           <div className="relative w-full bg-black lg:border border-white/20 shadow-xl shadow-white/10 my-10 px-6 pt-10 pb-8 mt-8 ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10">
