@@ -1,7 +1,7 @@
 import React from 'react'
 import CardService from '../cards/CardService'
 import CardImage from '../cards/CardImage'
-import Service from "..//.//..//assets/services/images/3.png"
+const Service = "https://pdt-website-videos.vercel.app/_next/static/media/4.17fbd747.png"
 
 const DesignGrafic = () => {
     return (

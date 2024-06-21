@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import LogoWhite from "../assets/logos/2.png"
+const LogoWhite = "https://pdt-website-videos.vercel.app/_next/static/media/2.2e589d59.png"
 
 const ServicesLayout = ({ children }: Readonly<{
     children: React.ReactNode;

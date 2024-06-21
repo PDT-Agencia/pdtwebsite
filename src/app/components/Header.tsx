@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { SvgCloseIcon, SvgHamburguerIcon } from '../svg/svgs';
 import { usePathname, useSearchParams } from 'next/navigation';
 import MenuSelect from './Select';
-import LogoWhite from "../assets/logos/2.png"
+const LogoWhite = "https://pdt-website-videos.vercel.app/_next/static/media/2.2e589d59.png"
 
 interface HeaderProps {
   textColorMenu: string;

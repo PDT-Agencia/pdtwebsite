@@ -10,7 +10,7 @@ import DesignAplications from '../../components/services/DesignAplications';
 import AudioVisualProducts from '../../components/services/AudioVisualProducts';
 import { IconType } from '../../interface/types';
 
-import Banner from "..//..//assets/services/banner/1.png"
+const Banner = "https://pdt-website-videos.vercel.app/_next/static/media/1.5bd8f4c7.png"
 
 const Services = () => {
   const [selectedIcon, setSelectedIcon] = useState<IconType | null>(null);

@@ -1,10 +1,10 @@
 import React from 'react';
 import TeamMember from './TeamMember';
-import New1 from "../assets/about-team/team/1.png"
-import New2 from "../assets/about-team/team/2.png"
-import New3 from "../assets/about-team/team/3.png"
-import New4 from "../assets/about-team/team/4.png"
-import New5 from "../assets/about-team/team/5.png"
+const New1 = "https://pdt-website-videos.vercel.app/_next/static/media/1.b8923d22.png"
+const New2 = "https://pdt-website-videos.vercel.app/_next/static/media/2.b08c8d6d.png"
+const New3 = "https://pdt-website-videos.vercel.app/_next/static/media/3.5cad40ab.png"
+const New4 = "https://pdt-website-videos.vercel.app/_next/static/media/4.57238a41.png"
+const New5 = "https://pdt-website-videos.vercel.app/_next/static/media/5.3d383e5e.png"
 
 const team = [
     {

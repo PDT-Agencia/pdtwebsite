@@ -7,20 +7,20 @@ import Link from 'next/link'
 import CardBlog from '../../components/cards/CardBlog'
 import Pagination from '../../components/Pagination'
 import Slider from '@/app/components/Slider'
-import Banner from "../../assets/blog/banner/1.png"
+const Banner = "https://pdt-website-videos.vercel.app/_next/static/media/1.ce65ed91.png"
 
 
-import New1 from "../../assets/blog/news/1.png"
-import New2 from "../../assets/blog/news/2.png"
-import New3 from "../../assets/blog/news/3.png"
-import New4 from "../../assets/blog/news/4.png"
-import New5 from "../../assets/blog/news/5.png"
-import New6 from "../../assets/blog/news/6.png"
-import New7 from "../../assets/blog/news/7.png"
-import New8 from "../../assets/blog/news/8.png"
-import New9 from "../../assets/blog/news/9.png"
+const New1 = "https://pdt-website-videos.vercel.app/_next/static/media/1.a0264d7e.png"
+const New2 = "https://pdt-website-videos.vercel.app/_next/static/media/2.9ef576fa.png"
+const New3 = "https://pdt-website-videos.vercel.app/_next/static/media/3.0810571a.png"
+const New4 = "https://pdt-website-videos.vercel.app/_next/static/media/4.808f0ab9.png"
+const New5 = "https://pdt-website-videos.vercel.app/_next/static/media/5.413749f3.png"
+const New6 = "https://pdt-website-videos.vercel.app/_next/static/media/6.7fb16c19.png"
+const New7 = "https://pdt-website-videos.vercel.app/_next/static/media/7.484689e3.png"
+const New8 = "https://pdt-website-videos.vercel.app/_next/static/media/8.b28dd798.png"
+const New9 = "https://pdt-website-videos.vercel.app/_next/static/media/9.43c303d2.png"
 
-import LogoDark from "../../assets/logos/1.png"
+const LogoDark = "https://pdt-website-videos.vercel.app/_next/static/media/1.c48eb77b.png"
 
 const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);

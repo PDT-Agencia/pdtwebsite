@@ -4,17 +4,17 @@ import React, { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-import Banner from "../../assets/about/1.png"
-import DOG from "../../assets/home/pdt/dog.png"
+const Banner = "https://pdt-website-videos.vercel.app/_next/static/media/1.3ffa2222.png"
+const DOG = "https://pdt-website-videos.vercel.app/_next/static/media/dog.31594abb.png"
 
-import New1 from "../../assets/blog/news/1.png"
-import New2 from "../../assets/blog/news/2.png"
-import New3 from "../../assets/blog/news/3.png"
-import New4 from "../../assets/blog/news/4.png"
-import New5 from "../../assets/blog/news/5.png"
-import New6 from "../../assets/blog/news/6.png"
+const New1 = "https://pdt-website-videos.vercel.app/_next/static/media/1.a0264d7e.png"
+const New2 = "https://pdt-website-videos.vercel.app/_next/static/media/2.9ef576fa.png"
+const New3 = "https://pdt-website-videos.vercel.app/_next/static/media/3.0810571a.png"
+const New4 = "https://pdt-website-videos.vercel.app/_next/static/media/4.808f0ab9.png"
+const New5 = "https://pdt-website-videos.vercel.app/_next/static/media/5.413749f3.png"
+const New6 = "https://pdt-website-videos.vercel.app/_next/static/media/6.7fb16c19.png"
 
-import LogoWhite from "../../assets/logos/2.png"
+const LogoWhite = "https://pdt-website-videos.vercel.app/_next/static/media/2.2e589d59.png"
 
 const About = () => {
 

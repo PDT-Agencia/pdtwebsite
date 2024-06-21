@@ -1,7 +1,7 @@
 import React from 'react'
 import CardService from '../cards/CardService'
 import CardImage from '../cards/CardImage'
-import Service from "..//.//..//assets/services/images/1.png"
+const Service = "http://localhost:3000/_next/static/media/1.ac54fe34.png"
 
 const DevelopmentSoftware = () => {
     return (

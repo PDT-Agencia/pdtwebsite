@@ -4,7 +4,7 @@ import React from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import IndexLayout from '@/app/layouts/IndexLayout'
 import Form from '@/app/components/Form';
-import Banner from "../../assets/about/1.png"
+const Banner = "https://pdt-website-videos.vercel.app/_next/static/media/1.3ffa2222.png"
 
 const Contact = () => {
     return (

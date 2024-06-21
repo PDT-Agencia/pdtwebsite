@@ -23,23 +23,22 @@ import Slider from "./components/Slider";
 import FormHome from "./components/FormHome";
 import WhatsApp from "./components/WhatsApp";
 
-import Tech1 from "../app/assets/home/tech/1.png"
-import Tech2 from "../app/assets/home/tech/2.png"
-import Tech3 from "../app/assets/home/tech/3.png"
-import Tech4 from "../app/assets/home/tech/4.png"
+const Tech1 = "https://pdt-website-videos.vercel.app/_next/static/media/1.3d793be7.png"
+const Tech2 = "https://pdt-website-videos.vercel.app/_next/static/media/2.f358746d.png"
+const Tech3 = "https://pdt-website-videos.vercel.app/_next/static/media/3.2c217082.png"
+const Tech4 = "https://pdt-website-videos.vercel.app/_next/static/media/4.00c5aa09.png"
 
-import Logo1 from "../app/assets/home/logos/1.png"
-import Logo2 from "../app/assets/home/logos/2.png"
-import Logo3 from "../app/assets/home/logos/3.png"
-import Logo4 from "../app/assets/home/logos/4.png"
-import Logo5 from "../app/assets/home/logos/5.png"
+const Logo1 = "https://pdt-website-videos.vercel.app/_next/static/media/1.76eb0533.png"
+const Logo2 = "https://pdt-website-videos.vercel.app/_next/static/media/2.01e9f631.png"
+const Logo3 = "https://pdt-website-videos.vercel.app/_next/static/media/3.c60d1535.png"
+const Logo4 = "https://pdt-website-videos.vercel.app/_next/static/media/4.1194179d.png"
+const Logo5 = "https://pdt-website-videos.vercel.app/_next/static/media/5.49462e84.png"
 
-import Foco from "../app/assets/home/foco/foco.png"
+const Foco = "https://pdt-website-videos.vercel.app/_next/static/media/foco.9aaf6805.png"
 
-import PDT from "../app/assets/home/pdt/dark/pdt.png"
+const PDT = "https://pdt-website-videos.vercel.app/_next/static/media/pdt.395d3481.png"
 
-import DOG from "../app/assets/home/pdt/dog.png"
-import User from "../app/assets/home/pdt/user.png"
+const DOG = "https://pdt-website-videos.vercel.app/_next/static/media/dog.31594abb.png"
 
 const videos = [
   "https://cdn.pixabay.com/video/2015/11/02/1236-144355017_large.mp4",
@@ -48,9 +47,9 @@ const videos = [
 ];
 
 const videosNews = [
-  "/1.mp4",
-  "/2.mp4",
-  "/3.mp4",
+  "https://pdt-website-videos.vercel.app/1.mp4",
+  "https://pdt-website-videos.vercel.app/2.mp4",
+  "https://pdt-website-videos.vercel.app/3.mp4",
 ];
 
 const messages = [
