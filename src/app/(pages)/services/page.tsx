@@ -9,8 +9,7 @@ import DesignGrafic from '../../components/services/DesignGrafic';
 import DesignAplications from '../../components/services/DesignAplications';
 import AudioVisualProducts from '../../components/services/AudioVisualProducts';
 import { IconType } from '../../interface/types';
-
-const Banner = "https://pdt-website-videos.vercel.app/_next/static/media/1.5bd8f4c7.png"
+import banner from "@/assets/images/services/desarrollo_de_software_banner.jpg";
 
 const Services = () => {
   const [selectedIcon, setSelectedIcon] = useState<IconType | null>(null);
@@ -49,7 +48,7 @@ const Services = () => {
             <div
               className="w-full h-[150rem] bg-gradient-to-t from-black absolute bottom-0"
             ></div>
-            <Image src={Banner} alt='Image Banner' width={300} height={300} className='w-full h-full object-cover' loading='lazy' />
+            <Image src={banner} alt='Image Banner' width={300} height={300} className='w-full h-full object-cover' loading='lazy' />
           </div>
         </div>
       </section>

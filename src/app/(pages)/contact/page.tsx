@@ -1,7 +1,6 @@
 "use client"
 import Image from 'next/image'
 import React from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
 import IndexLayout from '@/app/layouts/IndexLayout'
 import Form from '@/app/components/Form';
 const Banner = "https://pdt-website-videos.vercel.app/_next/static/media/1.3ffa2222.png"

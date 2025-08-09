@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import { SvgLogoPdt } from '@/app/svg/svgs'
 
 const Banner = "https://pdt-website-videos.vercel.app/_next/static/media/1.3ffa2222.png"
 const DOG = "https://pdt-website-videos.vercel.app/_next/static/media/dog.31594abb.png"
@@ -34,7 +35,7 @@ const About = () => {
 
     return (
         <>
-            <Header logo={LogoWhite} textColor='text-white' textColorMenu='#fff' />
+            <Header logo={<SvgLogoPdt size={100} />} textColor='text-white' textColorMenu='#fff' />
             <section className='w-full h-full min-h-screen flex flex-col items-center justify-center bg-black'>
                 <div className='flex items-center justify-center'>
                     <Image src={Banner} width={3000} height={3000} loading='lazy' alt='About' />

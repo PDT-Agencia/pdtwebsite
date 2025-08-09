@@ -1,9 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Page404 = () => {
-    const logo = "https://pdt-website-videos.vercel.app/_next/static/media/2.2e589d59.png"
     return (
         <div className="w-full max-w-[1440px] h-screen flex flex-col gap-8 justify-center items-center text-white pb-10">
             <div className='flex flex-col gap-3 items-center'>

@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Page404 from './components/Page404'
  
 export default function NotFound() {

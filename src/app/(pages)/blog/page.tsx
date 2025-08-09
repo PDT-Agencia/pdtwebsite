@@ -105,7 +105,7 @@ const Blog = () => {
           <div className='w-full min-h-[26rem] max-h-[26rem] relative'>
 
             {/* <Image src="https://res.cloudinary.com/ddeo6txjh/image/upload/v1716242290/banner_ykk8pp.png" width={3000} height={3000} loading='lazy' alt='Banner' /> */}
-            <Slider numberImage={1} images={images} />
+            <Slider images={images} />
           </div>
 
           <div className='flex flex-col gap-3'>

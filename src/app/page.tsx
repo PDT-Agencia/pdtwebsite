@@ -9,8 +9,10 @@ import {
   SvgInstagramIcon,
   SvgLinkedInIcon,
   SvgLoadIcon,
+  SvgLogoPdt,
   SvgMutedIcon,
   SvgPauseIcon,
+  SvgPerrito,
   SvgPlayIcon,
   SvgSoundIcon,
   SvgStarIcon,
@@ -22,23 +24,15 @@ import Video from "./components/Video";
 import Slider from "./components/Slider";
 import FormHome from "./components/FormHome";
 import WhatsApp from "./components/WhatsApp";
-
-const Tech1 = "https://pdt-website-videos.vercel.app/_next/static/media/1.3d793be7.png"
-const Tech2 = "https://pdt-website-videos.vercel.app/_next/static/media/2.f358746d.png"
-const Tech3 = "https://pdt-website-videos.vercel.app/_next/static/media/3.2c217082.png"
-const Tech4 = "https://pdt-website-videos.vercel.app/_next/static/media/4.00c5aa09.png"
-
-const Logo1 = "https://pdt-website-videos.vercel.app/_next/static/media/1.76eb0533.png"
-const Logo2 = "https://pdt-website-videos.vercel.app/_next/static/media/2.01e9f631.png"
-const Logo3 = "https://pdt-website-videos.vercel.app/_next/static/media/3.c60d1535.png"
-const Logo4 = "https://pdt-website-videos.vercel.app/_next/static/media/4.1194179d.png"
-const Logo5 = "https://pdt-website-videos.vercel.app/_next/static/media/5.49462e84.png"
-
-const Foco = "https://pdt-website-videos.vercel.app/_next/static/media/foco.9aaf6805.png"
-
-const PDT = "https://pdt-website-videos.vercel.app/_next/static/media/pdt.395d3481.png"
-
-const DOG = "https://pdt-website-videos.vercel.app/_next/static/media/dog.31594abb.png"
+import tech1Image from "@/assets/images/home/desarrollo_de_software.jpg";
+import tech2Image from "@/assets/images/home/diseño_de_aplicaciones.jpg";
+import tech3Image from "@/assets/images/home/diseño_grafico.jpg";
+import tech4Image from "@/assets/images/home/produccion_audiovisual.jpg";
+import foco from "@/assets/images/home/bombilla.jpg";
+import logo1 from "@/assets/images/home/nuestros_clientes/AIOP.png";
+import logo2 from "@/assets/images/home/nuestros_clientes/DC.png";
+import logo3 from "@/assets/images/home/nuestros_clientes/INMAVE.png";
+import logo4 from "@/assets/images/home/nuestros_clientes/PerfectIA.png";
 
 const videos = [
   "https://cdn.pixabay.com/video/2015/11/02/1236-144355017_large.mp4",
@@ -147,40 +141,28 @@ export default function Home() {
 
   const images = [
     {
-      src: Logo1,
+      src: logo1,
       width: 200,
       height: 80,
       alt: "Aiop",
     },
     {
-      src: Logo2,
+      src: logo2,
       width: 250,
       height: 130,
       alt: "DC",
     },
     {
-      src: Logo3,
-      width: 350,
-      height: 230,
-      alt: "Finan",
-    },
-    {
-      src: Logo4,
+      src: logo3,
       width: 280,
       height: 160,
       alt: "Inmave",
     },
     {
-      src: Logo5,
+      src: logo4,
       width: 280,
       height: 160,
-      alt: "Union",
-    },
-    {
-      src: Logo1,
-      width: 200,
-      height: 80,
-      alt: "Aiop",
+      alt: "PerfectIA",
     },
   ];
 
@@ -268,25 +250,25 @@ export default function Home() {
         <div className="max-w-[1440px] w-full flex flex-wrap gap-5 justify-center py-5 px-5 md:px-10">
           <CardTech
             url="/services?computer#section"
-            image={Tech1}
+            image={tech1Image}
             title="Desarrollo de"
             description="Software"
           />
           <CardTech
             url="/services?scuares#section"
-            image={Tech2}
+            image={tech2Image}
             title="Diseño de"
             description="Aplicaciones"
           />
           <CardTech
             url="/services?paint#section"
-            image={Tech3}
+            image={tech3Image}
             title="Diseño"
             description="Gráfico"
           />
           <CardTech
             url="/services?picture#section"
-            image={Tech4}
+            image={tech4Image}
             title="Producción"
             description="Audiovisual"
           />
@@ -328,7 +310,7 @@ export default function Home() {
             className={`hidden xl:block w-[600px] 2xl:w-[800px] ${
               scrollPosition.y >= 1000 && "animate-blink"
             }`}
-            src={Foco}
+            src={foco}
             width={300}
             height={300}
             loading="lazy"
@@ -369,14 +351,7 @@ export default function Home() {
 
       <section className="w-full bg-white flex items-center justify-center pt-40 relative px-10 2xl:px-0">
         <div className="w-40 h-40 lg:w-60 lg:h-60 rounded-full shadow-xl flex items-center justify-center p-10 absolute bg-white -top-20 md:-top-28">
-          <Image
-            src={PDT}
-            alt="Logo"
-            width={200}
-            height={200}
-            loading="lazy"
-            className="w-full"
-          />
+          <SvgLogoPdt size={150} color="#000000"/>
         </div>
       </section>
 
@@ -385,7 +360,7 @@ export default function Home() {
           <h2 className="text-2xl lg:text-4xl text-center uppercase font-extrabold pb-10">
             Nuestros clientes
           </h2>
-          <Slider numberImage={3} images={images} />
+          <Slider images={images} />
         </div>
       </section>
 
@@ -489,14 +464,7 @@ export default function Home() {
         <div className="max-w-[1440px] w-full flex flex-col xl:flex-row justify-between gap-10">
           <div className="w-full xl:w-[70%] xl:border-e p-0  xl:pe-10 flex flex-col gap-10">
             <div className="flex flex-col items-center md:items-start md:flex-row gap-8 pt-10">
-              <Image
-                src={DOG}
-                width={300}
-                height={300}
-                loading="lazy"
-                alt="Perrito"
-                className="w-40"
-              />
+              <SvgPerrito />
               <div className="flex flex-col gap-5 text-center md:text-start">
                 <h2 className="text-4xl uppercase font-extrabold">
                   ¿TIENES UNA GRAN IDEA?
