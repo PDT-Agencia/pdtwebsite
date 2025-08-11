@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import Team from '../../components/Team'
 import IndexLayout from '@/app/layouts/IndexLayout'
-const Banner = "https://pdt-website-videos.vercel.app/_next/static/media/1.ca911577.png"
+import Banner from '@/assets/images/services/banner.jpg'
 
 const AboutTeam = () => {
     const [invisible, setInvisible] = useState(false);

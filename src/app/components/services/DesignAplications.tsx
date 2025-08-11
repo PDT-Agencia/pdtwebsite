@@ -1,7 +1,7 @@
 import React from 'react'
 import CardService from '../cards/CardService'
-import CardImage from '../cards/CardImage'
-const Service = "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
+import CardImage from '../cards/CardImage';
+import Service from "@/assets/images/services/desarrollo_de_aplicaciones_card.jpg";
 
 const DesignAplications = () => {
     return (

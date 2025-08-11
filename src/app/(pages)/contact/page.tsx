@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react';
 import IndexLayout from '@/app/layouts/IndexLayout'
 import Form from '@/app/components/Form';
-const Banner = "https://pdt-website-videos.vercel.app/_next/static/media/1.3ffa2222.png"
+import Banner from "@/assets/images/services/banner.jpg"
 
 const Contact = () => {
     return (

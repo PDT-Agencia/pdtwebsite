@@ -1,6 +1,7 @@
 "use client";
 import IndexLayout from "./layouts/IndexLayout";
 import CardTech from "./components/cards/CardTech";
+import { Bulb } from "./components/Bombilla";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -28,7 +29,6 @@ import tech1Image from "@/assets/images/home/desarrollo_de_software.jpg";
 import tech2Image from "@/assets/images/home/diseño_de_aplicaciones.jpg";
 import tech3Image from "@/assets/images/home/diseño_grafico.jpg";
 import tech4Image from "@/assets/images/home/produccion_audiovisual.jpg";
-import foco from "@/assets/images/home/bombilla.jpg";
 import logo1 from "@/assets/images/home/nuestros_clientes/AIOP.png";
 import logo2 from "@/assets/images/home/nuestros_clientes/DC.png";
 import logo3 from "@/assets/images/home/nuestros_clientes/INMAVE.png";
@@ -231,9 +231,8 @@ export default function Home() {
                     {videos.map((video, index) => (
                       <button
                         key={index}
-                        className={`${
-                          activeTab === index ? "bg-red-500" : "bg-white"
-                        } duration-300 w-full h-1.5 cursor-pointer rounded-full`}
+                        className={`${activeTab === index ? "bg-red-500" : "bg-white"
+                          } duration-300 w-full h-1.5 cursor-pointer rounded-full`}
                         onClick={() => changeVideo(index)}
                       ></button>
                     ))}
@@ -278,9 +277,8 @@ export default function Home() {
       <section className="w-full flex justify-center items-center z-0 pb-56 xl:pb-48 pt-28 md:pt-36">
         <div className="max-w-[1440px] flex flex-col gap-14 xl:gap-0 xl:flex-row justify-center md:justify-between items-center w-full px-10 2xl:px-0">
           <div
-            className={`flex flex-col items-start md:justify-center md:items-center w-full xl:w-fit gap-14 xl:gap-20 opacity-0 duration-300 transition ${
-              scrollPosition.y >= 1050 && "opacity-100 lg:-translate-y-10"
-            }`}
+            className={`flex flex-col items-start md:justify-center md:items-center w-full xl:w-fit gap-14 xl:gap-20 opacity-0 duration-300 transition ${scrollPosition.y >= 1050 && "opacity-100 lg:-translate-y-10"
+              }`}
           >
             <div className="flex items-center gap-3 text-white/60 text-lg xl:text-xl font-light lg:ps-8">
               <div className="border w-6 h-6 border-white rounded-full flex items-center justify-center">
@@ -306,21 +304,14 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <Image
-            className={`hidden xl:block w-[600px] 2xl:w-[800px] ${
-              scrollPosition.y >= 1000 && "animate-blink"
-            }`}
-            src={foco}
-            width={300}
-            height={300}
-            loading="lazy"
-            alt="Bombilla"
-          />
+          {/* Bombilla animada */}
+          <div className="hidden xl:block w-[600px] 2xl:w-[800px]">
+            <Bulb className="w-full" />
+          </div>
 
           <div
-            className={`flex flex-col items-start md:justify-center md:items-center w-full xl:w-fit gap-14 xl:gap-20 opacity-0 duration-300 transition ${
-              scrollPosition.y >= 1050 && "opacity-100 lg:-translate-y-10"
-            }`}
+            className={`flex flex-col items-start md:justify-center md:items-center w-full xl:w-fit gap-14 xl:gap-20 opacity-0 duration-300 transition ${scrollPosition.y >= 1050 && "opacity-100 lg:-translate-y-10"
+              }`}
           >
             <div className="flex items-center gap-3 text-white/60 text-lg xl:text-xl font-light">
               <div className="border w-6 h-6 max-w-6 max-h-6 border-white rounded-full flex items-center justify-center">
@@ -351,7 +342,7 @@ export default function Home() {
 
       <section className="w-full bg-white flex items-center justify-center pt-40 relative px-10 2xl:px-0">
         <div className="w-40 h-40 lg:w-60 lg:h-60 rounded-full shadow-xl flex items-center justify-center p-10 absolute bg-white -top-20 md:-top-28">
-          <SvgLogoPdt size={150} color="#000000"/>
+          <SvgLogoPdt size={150} color="#000000" />
         </div>
       </section>
 
@@ -403,18 +394,16 @@ export default function Home() {
                 <button
                   onClick={() => changeVideoNew((activeTabNew - 1 + 3) % 3)}
                   disabled={activeTabNew === 0}
-                  className={`rounded-full p-2 rotate-180 ${
-                    activeTabNew === 0 ? "bg-white/30" : "bg-white"
-                  }`}
+                  className={`rounded-full p-2 rotate-180 ${activeTabNew === 0 ? "bg-white/30" : "bg-white"
+                    }`}
                 >
                   <SvgArrowIcon size={20} color="bg-black" />
                 </button>
                 <button
                   onClick={() => changeVideoNew((activeTabNew + 1) % 3)}
                   disabled={activeTabNew === 2}
-                  className={`rounded-full p-2 ${
-                    activeTabNew === 2 ? "bg-white/30" : "bg-white"
-                  }`}
+                  className={`rounded-full p-2 ${activeTabNew === 2 ? "bg-white/30" : "bg-white"
+                    }`}
                 >
                   <SvgArrowIcon size={20} color="bg-black" />
                 </button>

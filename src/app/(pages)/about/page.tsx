@@ -3,29 +3,25 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import { SvgLogoPdt } from '@/app/svg/svgs'
+import { SvgLogoPdt, SvgPerrito } from '@/app/svg/svgs'
 
-const Banner = "https://pdt-website-videos.vercel.app/_next/static/media/1.3ffa2222.png"
-const DOG = "https://pdt-website-videos.vercel.app/_next/static/media/dog.31594abb.png"
-
-const New1 = "https://pdt-website-videos.vercel.app/_next/static/media/1.a0264d7e.png"
-const New2 = "https://pdt-website-videos.vercel.app/_next/static/media/2.9ef576fa.png"
-const New3 = "https://pdt-website-videos.vercel.app/_next/static/media/3.0810571a.png"
-const New4 = "https://pdt-website-videos.vercel.app/_next/static/media/4.808f0ab9.png"
-const New5 = "https://pdt-website-videos.vercel.app/_next/static/media/5.413749f3.png"
-const New6 = "https://pdt-website-videos.vercel.app/_next/static/media/6.7fb16c19.png"
-
-const LogoWhite = "https://pdt-website-videos.vercel.app/_next/static/media/2.2e589d59.png"
+import Banner from "@/assets/images/services/banner.jpg"
+import Creativos from "@/assets/images/about/creativos.jpg"
+import Responsables from "@/assets/images/about/responsables.jpg"
+import Eficiencia from "@/assets/images/about/eficiencia.jpg"
+import Integridad from "@/assets/images/about/integridad.jpg"
+import Adaptativo from "@/assets/images/about/adaptativo.jpg"
+import Evolucion from "@/assets/images/about/evolucion.jpg"
 
 const About = () => {
 
     const items = [
-        { title: 'Somos creativos', image: New1, description: 'Nos motiva la innovación. Cada proyecto que abordamos es una oportunidad para reinventar y superar límites creativos.' },
-        { title: 'Somos responsables', image: New2, description: 'La responsabilidad es nuestro pilar. Cada acción y decisión está guiada por un compromiso firme con la calidad y la ética.' },
-        { title: 'Somos eficientes', image: New3, description: 'La eficiencia es clave. Optimizamos cada proceso y recurso para ofrecer resultados rápidos sin comprometer la excelencia.' },
-        { title: 'Somos íntegros', image: New4, description: 'La integridad nos define. Actuamos con transparencia y honestidad, asegurando la confianza y el respeto en todas nuestras relaciones.' },
-        { title: 'Somos adaptativos', image: New5, description: 'Nos adaptamos a los cambios. En un entorno dinámico, nuestra flexibilidad nos permite innovar y responder con agilidad.' },
-        { title: 'Somos evolución', image: New6, description: 'Evolucionamos constantemente. Nuestra búsqueda de mejoras continuas nos lleva a crecer y a ofrecer siempre lo mejor.' }
+        { title: 'Somos creativos', image: Creativos, description: 'Nos motiva la innovación. Cada proyecto que abordamos es una oportunidad para reinventar y superar límites creativos.' },
+        { title: 'Somos responsables', image: Responsables, description: 'La responsabilidad es nuestro pilar. Cada acción y decisión está guiada por un compromiso firme con la calidad y la ética.' },
+        { title: 'Somos eficientes', image: Eficiencia, description: 'La eficiencia es clave. Optimizamos cada proceso y recurso para ofrecer resultados rápidos sin comprometer la excelencia.' },
+        { title: 'Somos íntegros', image: Integridad, description: 'La integridad nos define. Actuamos con transparencia y honestidad, asegurando la confianza y el respeto en todas nuestras relaciones.' },
+        { title: 'Somos adaptativos', image: Adaptativo, description: 'Nos adaptamos a los cambios. En un entorno dinámico, nuestra flexibilidad nos permite innovar y responder con agilidad.' },
+        { title: 'Somos evolución', image: Evolucion, description: 'Evolucionamos constantemente. Nuestra búsqueda de mejoras continuas nos lleva a crecer y a ofrecer siempre lo mejor.' }
     ];
 
 
@@ -123,13 +119,29 @@ const About = () => {
                                 </button>
                             ))}
                         </div>
+
                         <div className='w-full h-full relative'>
-                            <div className='w-80 h-full left-0 bottom-0 top-0 bg-gradient-to-r from-black  absolute'></div>
-                            <div className='w-full h-80  bottom-0 bg-gradient-to-t from-black  absolute'></div>
-                            <Image className='w-full h-full max-h-[32rem] object-cover' src={selectedItem.image} width={3000} height={3000} loading='lazy' alt='About person' />
-                            <p className='absolute duration-200 bottom-2 left-2 w-56 sm:w-[30rem] sm:bottom-5 sm:left-5 md:bottom-10 md:left-10 md:w-[23rem] lg:w-[31rem] xl:w-[37rem] text-sm sm:text-lg md:text-xl font-extralight'>{selectedItem.description}</p>
-                            <Image className='absolute right-0 bottom-0 w-20 md:w-28 lg:w-32' width={100} height={100} src={DOG} loading='lazy' alt='Logo Dog' />
+                            <div className='w-80 h-full left-0 bottom-0 top-0 bg-gradient-to-r from-black absolute'></div>
+                            <div className='w-full h-80 bottom-0 bg-gradient-to-t from-black absolute'></div>
+
+                            <Image
+                                className='w-full h-full max-h-[32rem] object-cover'
+                                src={selectedItem.image}
+                                width={3000}
+                                height={3000}
+                                loading='lazy'
+                                alt='About person'
+                            />
+
+                            <p className='absolute duration-200 bottom-2 left-2 w-56 sm:w-[30rem] sm:bottom-5 sm:left-5 md:bottom-10 md:left-10 md:w-[23rem] lg:w-[31rem] xl:w-[37rem] text-sm sm:text-lg md:text-xl font-extralight'>
+                                {selectedItem.description}
+                            </p>
+
+                            <div className='absolute right-0 bottom-0 w-20 md:w-28 lg:w-32'>
+                                <SvgPerrito size={100} />
+                            </div>
                         </div>
+
                     </div>
 
 

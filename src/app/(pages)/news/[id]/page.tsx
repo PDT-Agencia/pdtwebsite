@@ -8,6 +8,7 @@ import { title } from 'process'
 import Page404 from '@/app/components/Page404'
 import IndexLayout from '@/app/layouts/IndexLayout'
 import {news} from './news'
+import { SvgLogoPdt } from '@/app/svg/svgs'
 
 export function generateStaticParams() {
   return news.map(item => ({ id: item.id.toString() }));
@@ -30,7 +31,7 @@ export default function Page({ params }: { params: { id: string } }) {
 
   return (
     <>
-      <Header logo="https://pdt-website-videos.vercel.app/_next/static/media/1.c48eb77b.png" textColor='text-black' textColorMenu='#000' />
+      <Header logo={<SvgLogoPdt size={100} color='#000000'/>} textColor='text-black' textColorMenu='#000' />
       <section className='w-full h-full pt-40 pb-20 flex flex-col items-center justify-center'>
         <div className='w-full max-w-[1440px] flex flex-col gap-10 px-5 md:px-10'>
           <div className='flex flex-col gap-20'>
@@ -47,7 +48,7 @@ export default function Page({ params }: { params: { id: string } }) {
 
                 <div className='bg-black p-7 rounded-xl flex flex-col lg:flex-row items-center gap-10  text-white'>
                   <div className='bg-red-100 w-44 lg:h-36 h-44 flex items-center justify-center px-4 rounded-full'>
-                    <Image src="https://pdt-website-videos.vercel.app/_next/static/media/1.c48eb77b.png" width={400} height={400} loading='lazy' alt='Logo' className='w' />
+                    <SvgLogoPdt size={100} color='#000000'/>
                   </div>
 
                   <div className='w-full flex flex-col gap-2'>

@@ -9,7 +9,7 @@ import DesignGrafic from '../../components/services/DesignGrafic';
 import DesignAplications from '../../components/services/DesignAplications';
 import AudioVisualProducts from '../../components/services/AudioVisualProducts';
 import { IconType } from '../../interface/types';
-import banner from "@/assets/images/services/desarrollo_de_software_banner.jpg";
+import banner from "@/assets/images/services/banner.jpg";
 
 const Services = () => {
   const [selectedIcon, setSelectedIcon] = useState<IconType | null>(null);
